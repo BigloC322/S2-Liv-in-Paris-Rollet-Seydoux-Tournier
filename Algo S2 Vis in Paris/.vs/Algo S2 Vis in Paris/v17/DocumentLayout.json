@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\flore\\Desktop\\Algo S2 Vis in Paris\\",
+  "WorkspaceRootPath": "C:\\Users\\alexa\\OneDrive\\Desktop\\Probl\u00E8me scientifique et informatique\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\algo s2 vis in paris\\algo s2 vis in paris\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\alexa\\onedrive\\desktop\\probl\u00E8me scientifique et informatique\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\flore\\Desktop\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\OneDrive\\Desktop\\Probl\u00E8me scientifique et informatique\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Program.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Program.cs",
-              "ToolTip": "C:\\Users\\flore\\Desktop\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Program.cs",
+              "ToolTip": "C:\\Users\\alexa\\OneDrive\\Desktop\\Probl\u00E8me scientifique et informatique\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Program.cs",
               "RelativeToolTip": "Algo S2 Vis in Paris\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T07:55:45.056Z",
               "EditorCaption": ""
