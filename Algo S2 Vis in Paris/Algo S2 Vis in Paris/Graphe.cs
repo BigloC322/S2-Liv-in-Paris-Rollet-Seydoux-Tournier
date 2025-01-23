@@ -21,7 +21,7 @@ namespace Algo_S2_Vis_in_Paris
             set { this.grapheAsso = value; }
         }
 
-        public int[,] CréationGraphe()
+        public int[,] CréationMatriceAdjacence()
         {
             return grapheAsso;
         }

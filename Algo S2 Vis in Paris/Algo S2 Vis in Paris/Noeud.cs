@@ -8,19 +8,11 @@ namespace Algo_S2_Vis_in_Paris
 {
     internal class Noeud
     {
-        private int sommet;
         private List<int> ensembleSommets;
 
-        public Noeud(int sommet, List<int> ensembleSommets)
+        public Noeud(List<int> ensembleSommets)
         {
-            this.sommet = sommet;
             this.ensembleSommets = ensembleSommets;
-        }
-
-        public int Sommet
-        {
-            get { return this.sommet; }
-            set { this.sommet = value; }
         }
 
         public List<int> EnsembleSommets
@@ -55,8 +47,8 @@ namespace Algo_S2_Vis_in_Paris
                 Console.WriteLine("Le fichier n'a pas été trouvé.");
             }
 
-            string[] séparationLigne = ligneLue.Split(' ');
-            string nbMembresString = séparationLigne[0];
+            string[] séparationLigne = ligneLue.Split(' '); //vu que la ligne 1 a plusieurs nombres
+            string nbMembresString = séparationLigne[0]; //on veut seulement le premier qui contient le nb de membres
             int nbMembres = Convert.ToInt32(nbMembresString);
 
             for (int i = 1; i <= nbMembres; i++)
@@ -73,6 +65,7 @@ namespace Algo_S2_Vis_in_Paris
             {
                 Console.Write(ensembleSommets[i] + " ");
             }
+            Console.WriteLine();
         }
     }
 }
