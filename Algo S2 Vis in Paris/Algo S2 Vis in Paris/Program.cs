@@ -1,5 +1,10 @@
-﻿//En route les putes  
-//lesgo
-Console.WriteLine("Paul");
-Console.WriteLine("Alex");
-Console.WriteLine("Florent");
+﻿namespace Algo_S2_Vis_in_Paris
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        }
+    }
+}
