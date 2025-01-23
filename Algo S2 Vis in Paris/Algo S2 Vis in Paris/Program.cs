@@ -2,12 +2,4 @@
 //lesgo
 Console.WriteLine("Paul");
 Console.WriteLine("Alex");
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 Console.WriteLine("Florent");
-=======
-//test
->>>>>>> Stashed changes
-=======
-//test
->>>>>>> Stashed changes
