@@ -46,6 +46,68 @@ namespace Algo_S2_Vis_in_Paris
             return matriceAdj;
         }
 
+        public int[] ParcoursLargeur()
+        {
+
+        }
+
+        public int[] ParcoursProfondeur()
+        {
+
+        }
+
+        public bool EstConnexe(int[,] matriceAdj)
+        {
+            int dimension = matriceAdj.GetLength(0);
+            int puissance = dimension;
+
+            int[,] matriceAdjPuissanceK = new int[matriceAdj.GetLength(0), matriceAdj.GetLength(1)]; //matrice qui contient les produits A^k
+
+            matriceAdjPuissanceK = PuissanceMatrice(puissance, matriceAdj);
+
+            bool valPositives = true;
+            for (int i = 0; i < matriceAdjPuissanceK.GetLength(0); i++)
+            {
+                for (int j = 0; j < matriceAdjPuissanceK.GetLength(1); j++)
+                {
+                    if (matriceAdjPuissanceK[i,j] == 0)
+                    {
+                        valPositives = false;
+                        break;
+                    }
+                }
+            }
+
+            return valPositives;
+        }
+
+        public int[,] PuissanceMatrice(int puissance, int[,] matrice)
+        {
+            int[,] matriceP = new int[matrice.GetLength(0), matrice.GetLength(1)];
+            for (int i = 0; i < matriceP.GetLength(0); i++)
+            {
+                for (int j = 0; j < matriceP.GetLength(1); j++)
+                {
+                    matriceP[i, j] = 0; //initialisation des valeurs à 0
+                }
+            }
+
+            for (int i = 1; i < puissance; i++) //s'arrête à puissance - 1: le chemin le plus long possible (puissance = dimension d'où ce nombre)
+            {
+                for (int a = 0; a < matrice.GetLength(0); a++)
+                {
+                    for (int b = 0; b < a; b++)
+                    {
+                        for (int k = 0; k < matrice.GetLength(0); k++)
+                        {
+                            matriceP[a, b] += matrice[a, k] * matrice[k, b];
+                        }
+                    }
+                }
+            }
+            return matriceP;
+        }
+
         public void MatriceAdjacenceToString(int[,] matriceAdj)
         {
             for (int i = 0; i < matriceAdj.GetLength(0); i++)

@@ -25,6 +25,15 @@
             Graphe g = new Graphe(matriceAdj);
             g.GrapheAsso = g.CréationMatriceAdjacence(matriceAdj, arêtes.Relations);
             g.MatriceAdjacenceToString(g.GrapheAsso);
+            bool connexe = g.EstConnexe(g.GrapheAsso);
+            if (connexe == true)
+            {
+                Console.WriteLine("\nLe graphe du réseau des membres de l'association est connexe.");
+            }
+            else
+            {
+                Console.WriteLine("\nLe graphe du réseau des membres de l'association n'est pas connexe.");
+            }
         }
     }
 }
