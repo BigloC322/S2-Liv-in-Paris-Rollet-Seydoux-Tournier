@@ -61,7 +61,7 @@ namespace Algo_S2_Vis_in_Paris
 
         public List<int[]> Arête(string cheminFichierRelations)
         {
-            int ligneInit = 2; //à partir de 2, il y a toutes les relations entre les sommets dans le fichier
+            //à partir de la ligne 2, il y a toutes les relations entre les sommets dans le fichier
             string ligneLue = "";
             List<int[]> relations = new List<int[]>();
 
@@ -69,6 +69,8 @@ namespace Algo_S2_Vis_in_Paris
             {
                 using (StreamReader lecture = new StreamReader(cheminFichierRelations))
                 {
+                    lecture.ReadLine(); //permet de sauter une ligne (la ligne 1 qui contient de l'info mais pas les relations)
+
                     while ((ligneLue = lecture.ReadLine()) != null)
                     {
                         string[] séparation = ligneLue.Split(' '); //on casse en deux la ligne qui a les deux sommets reliés

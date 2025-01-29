@@ -105,6 +105,13 @@ namespace Algo_S2_Vis_in_Paris
             return valPositives;
         }
 
+        public bool ContientCircuits(int[,] matriceAdj)
+        {
+            bool contientCircuits = false;
+
+            return contientCircuits;
+        }
+
         public int[,] PuissanceMatrice(int puissance, int[,] matrice)
         {
             int[,] matriceP = new int[matrice.GetLength(0), matrice.GetLength(1)];

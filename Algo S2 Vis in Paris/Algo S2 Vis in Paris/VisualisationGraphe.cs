@@ -12,20 +12,19 @@ namespace Algo_S2_Vis_in_Paris
     {
         public void ReprésenterGraphe(int[,] matriceAdj)
         {
-            int longueur = 1000;
-            int largeur = 1000;
+            int longueur = 3000;
+            int largeur = 3000;
             Bitmap visuel = new Bitmap(longueur, largeur);
             Graphics graphisme = Graphics.FromImage(visuel);
 
-            // Define node positions (in a circular layout)
-            int nodeCount = matriceAdj.GetLength(0);
-            PointF[] positions = new PointF[nodeCount];
+            int sommetCount = matriceAdj.GetLength(0);
+            PointF[] positions = new PointF[sommetCount];
             float centerX = largeur / 2;
             float centerY = longueur / 2;
-            float radius = 400; // Distance from center
-            float angleStep = 360f / nodeCount;
+            float radius = 1200;
+            float angleStep = 360f / sommetCount;
 
-            for (int i = 0; i < nodeCount; i++)
+            for (int i = 0; i < sommetCount; i++)
             {
                 float angle = i * angleStep * (float)Math.PI / 180f;
                 positions[i] = new PointF(
@@ -34,40 +33,35 @@ namespace Algo_S2_Vis_in_Paris
                 );
             }
 
-            // Draw connections (edges)
-            Pen linePen = new Pen(Color.Black, 2);
-            for (int i = 0; i < nodeCount; i++)
+            Pen linePen = new Pen(Color.White, 2);
+            for (int i = 0; i < sommetCount; i++)
             {
-                for (int j = 0; j < nodeCount; j++)
+                for (int j = 0; j < sommetCount; j++)
                 {
-                    if (matriceAdj[i, j] == 1) // Check for connection
+                    if (matriceAdj[i, j] == 1)
                     {
                         graphisme.DrawLine(linePen, positions[i], positions[j]);
                     }
                 }
             }
 
-            // Draw nodes and labels
-            Brush nodeBrush = Brushes.Blue;
-            Brush textBrush = Brushes.Black;
-            Font font = new Font("Arial", 12);
-            float nodeRadius = 10;
+            Brush couleurSommet = Brushes.MediumBlue;
+            Brush couleurNombreSommet = Brushes.Black;
+            Font font = new Font("Arial", 18);
+            float rayonSommet = 30;
 
-            for (int i = 0; i < nodeCount; i++)
+            for (int i = 0; i < sommetCount; i++)
             {
-                // Draw node as a circle
-                graphisme.FillEllipse(nodeBrush, positions[i].X - nodeRadius, positions[i].Y - nodeRadius, nodeRadius * 2, nodeRadius * 2);
+                graphisme.FillEllipse(couleurSommet, positions[i].X - rayonSommet, positions[i].Y - rayonSommet, rayonSommet * 2, rayonSommet * 2);
 
-                // Draw node label
-                string label = (i + 1).ToString(); // Node number (1-based index)
+                string label = (i + 1).ToString();
                 SizeF labelSize = graphisme.MeasureString(label, font);
-                graphisme.DrawString(label, font, textBrush, positions[i].X - labelSize.Width / 2, positions[i].Y - labelSize.Height / 2);
+                graphisme.DrawString(label, font, couleurNombreSommet, positions[i].X - labelSize.Width / 2, positions[i].Y - labelSize.Height / 2);
             }
 
-            // Save the bitmap to a file
-            string filePath = "graph_with_labels.png";
+            string filePath = "graphe_visuel.png";
             visuel.Save(filePath);
-            Console.WriteLine($"Graph saved to {filePath}");
+            Console.WriteLine($"Le graphe a été enregistré dans le dossier: {filePath}");
         }
     }
 }
