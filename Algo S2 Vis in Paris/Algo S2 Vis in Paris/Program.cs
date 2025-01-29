@@ -22,9 +22,16 @@
             Console.WriteLine();
 
             int[,] matriceAdj = new int[ensembleSommets.Count,ensembleSommets.Count]; //forcément la matrice d'adjacence est de la dimension du nombre de sommets
-            Graphe g = new Graphe(matriceAdj);
-            g.GrapheAsso = g.CréationMatriceAdjacence(matriceAdj, arêtes.Relations);
+            Dictionary<int, List<int>> listeAdj = new Dictionary<int, List<int>>();
+            Graphe g = new Graphe(matriceAdj, listeAdj);
+
+            g.GrapheAsso = g.CréationMatriceAdjacence(matriceAdj, arêtes.Relations); //avec matrice adj
+            g.ListeAdj = g.CréationListeAdj(arêtes.Relations, listeAdj); //avec liste adj
+
             g.MatriceAdjacenceToString(g.GrapheAsso);
+            Console.WriteLine();
+            g.ListeAdjacenceToString(g.ListeAdj);
+
             bool connexe = g.EstConnexe(g.GrapheAsso);
             if (connexe == true)
             {
@@ -34,6 +41,9 @@
             {
                 Console.WriteLine("\nLe graphe du réseau des membres de l'association n'est pas connexe.");
             }
+
+            VisualisationGraphe graphismes = new VisualisationGraphe();
+            graphismes.ReprésenterGraphe(g.GrapheAsso);
         }
     }
 }

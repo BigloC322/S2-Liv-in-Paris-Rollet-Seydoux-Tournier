@@ -9,16 +9,24 @@ namespace Algo_S2_Vis_in_Paris
     internal class Graphe
     {
         private int[,] grapheAsso;
+        private Dictionary<int, List<int>> listeAdj;
 
-        public Graphe(int[,] grapheAsso)
+        public Graphe(int[,] grapheAsso, Dictionary<int, List<int>> listeAdj)
         {
             this.grapheAsso = grapheAsso;
+            this.listeAdj = listeAdj;
         }
 
         public int[,] GrapheAsso
         {
             get { return this.grapheAsso; }
             set { this.grapheAsso = value; }
+        }
+
+        public Dictionary<int, List<int>> ListeAdj
+        {
+            get { return this.listeAdj; }
+            set { this.listeAdj = value; }
         }
 
         public int[,] CréationMatriceAdjacence(int[,] matriceAdj, List<int[]> relations)
@@ -46,14 +54,27 @@ namespace Algo_S2_Vis_in_Paris
             return matriceAdj;
         }
 
-        public int[] ParcoursLargeur()
+        public Dictionary<int, List<int>> CréationListeAdj(List<int[]> relations, Dictionary<int, List<int>> listeAdjacence)
         {
+            foreach (var rel in relations)
+            {
+                int h = rel[0];
+                int g = rel[1];
 
-        }
+                if (!listeAdjacence.ContainsKey(h))
+                {
+                    listeAdjacence[h] = new List<int>();
+                }
+                listeAdjacence[h].Add(g);
 
-        public int[] ParcoursProfondeur()
-        {
+                if (!listeAdjacence.ContainsKey(g)) //car graphe non-orienté, on ajoute la relation dans les deux sens
+                {
+                    listeAdjacence[g] = new List<int>();
+                }
+                listeAdjacence[g].Add(h);
+            }
 
+            return listeAdjacence;
         }
 
         public bool EstConnexe(int[,] matriceAdj)
@@ -66,7 +87,7 @@ namespace Algo_S2_Vis_in_Paris
             matriceAdjPuissanceK = PuissanceMatrice(puissance, matriceAdj);
 
             bool valPositives = true;
-            for (int i = 0; i < matriceAdjPuissanceK.GetLength(0); i++)
+            for (int i = 0; i < matriceAdjPuissanceK.GetLength(0); i++) //le graphe est connexe ssi sa matrice d'adjacence puissance (nomre de sommets - 1) n'a aucune valeurs nulles
             {
                 for (int j = 0; j < matriceAdjPuissanceK.GetLength(1); j++)
                 {
@@ -117,6 +138,15 @@ namespace Algo_S2_Vis_in_Paris
                     Console.Write(matriceAdj[i, j] + " ");
                 }
                 Console.WriteLine();
+            }
+        }
+
+        public void ListeAdjacenceToString(Dictionary<int, List<int>> listeAdjacence)
+        {
+            foreach (var sommet in listeAdjacence)
+            {
+                Console.Write("Sommet " + sommet.Key + ": ");
+                Console.WriteLine(string.Join(", ", sommet.Value));
             }
         }
     }
