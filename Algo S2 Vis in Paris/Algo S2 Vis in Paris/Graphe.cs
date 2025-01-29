@@ -98,6 +98,9 @@ namespace Algo_S2_Vis_in_Paris
                     }
                 }
             }
+            Console.WriteLine();
+            MatriceAdjacenceToString(matriceAdjPuissanceK);
+            Console.WriteLine();
 
             return valPositives;
         }
@@ -135,7 +138,7 @@ namespace Algo_S2_Vis_in_Paris
             {
                 for (int j = 0; j < matriceAdj.GetLength(1); j++)
                 {
-                    Console.Write(matriceAdj[i, j] + " ");
+                    Console.Write($"{matriceAdj[i, j],3}" + " ");
                 }
                 Console.WriteLine();
             }

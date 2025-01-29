@@ -22,7 +22,7 @@ namespace Algo_S2_Vis_in_Paris
             PointF[] positions = new PointF[nodeCount];
             float centerX = largeur / 2;
             float centerY = longueur / 2;
-            float radius = 200; // Distance from center
+            float radius = 400; // Distance from center
             float angleStep = 360f / nodeCount;
 
             for (int i = 0; i < nodeCount; i++)
