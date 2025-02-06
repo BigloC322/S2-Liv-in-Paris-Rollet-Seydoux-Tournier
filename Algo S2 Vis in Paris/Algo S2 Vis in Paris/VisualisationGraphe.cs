@@ -61,7 +61,7 @@ namespace Algo_S2_Vis_in_Paris
 
             string filePath = "graphe_visuel.png";
             visuel.Save(filePath);
-            Console.WriteLine($"Le graphe a été enregistré dans le dossier: {filePath}");
+            Console.WriteLine($"\nLe graphe a été enregistré dans le fichier {filePath}");
         }
     }
 }

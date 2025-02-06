@@ -15,7 +15,6 @@
 
             List<int[]> relations = new List<int[]>();
             Lien arêtes = new Lien(relations);
-            //int nbRelations = arêtes.DéterminerNbRelations(cheminFichierRelations);
             arêtes.Relations = arêtes.Arête(cheminFichierRelations);
             arêtes.relationsToString(arêtes.Relations);
 
@@ -23,7 +22,8 @@
 
             int[,] matriceAdj = new int[ensembleSommets.Count,ensembleSommets.Count]; //forcément la matrice d'adjacence est de la dimension du nombre de sommets
             Dictionary<int, List<int>> listeAdj = new Dictionary<int, List<int>>();
-            Graphe g = new Graphe(matriceAdj, listeAdj);
+            List<List<int>> listeDesChemins = new List<List<int>>();
+            Graphe g = new Graphe(matriceAdj, listeAdj, listeDesChemins);
 
             g.GrapheAsso = g.CréationMatriceAdjacence(matriceAdj, arêtes.Relations); //avec matrice adj
             g.ListeAdj = g.CréationListeAdj(arêtes.Relations, listeAdj); //avec liste adj

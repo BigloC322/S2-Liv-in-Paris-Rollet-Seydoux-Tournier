@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,13 @@ namespace Algo_S2_Vis_in_Paris
     {
         private int[,] grapheAsso;
         private Dictionary<int, List<int>> listeAdj;
+        private List<List<int>> listeDesChemins;
 
-        public Graphe(int[,] grapheAsso, Dictionary<int, List<int>> listeAdj)
+        public Graphe(int[,] grapheAsso, Dictionary<int, List<int>> listeAdj, List<List<int>> listeDesChemins)
         {
             this.grapheAsso = grapheAsso;
             this.listeAdj = listeAdj;
+            this.listeDesChemins = listeDesChemins;
         }
 
         public int[,] GrapheAsso
@@ -27,6 +30,12 @@ namespace Algo_S2_Vis_in_Paris
         {
             get { return this.listeAdj; }
             set { this.listeAdj = value; }
+        }
+
+        public List<List<int>> ListeDesChemins
+        {
+            get { return this.listeDesChemins; }
+            set { this.listeDesChemins = value; }
         }
 
         public int[,] CréationMatriceAdjacence(int[,] matriceAdj, List<int[]> relations)
@@ -108,6 +117,8 @@ namespace Algo_S2_Vis_in_Paris
         public bool ContientCircuits(int[,] matriceAdj)
         {
             bool contientCircuits = false;
+
+
 
             return contientCircuits;
         }

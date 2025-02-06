@@ -24,41 +24,6 @@ namespace Algo_S2_Vis_in_Paris
             set { this.relations = value; }
         }
 
-        /*
-        public int DéterminerNbRelations(string cheminFichierRelations)
-        {
-            int ligneInit = 1; //la première ligne du fichier contient les infos sur le nombre de membres et relations
-            string ligneLue = "";
-            int indiceLigne = 1;
-
-            try
-            {
-                using (StreamReader lecture = new StreamReader(cheminFichierRelations))
-                {
-                    while ((ligneLue = lecture.ReadLine()) != null)
-                    {
-                        if (indiceLigne == ligneInit)
-                        {
-                            Console.WriteLine(ligneLue);
-                            break;
-                        }
-                        indiceLigne++;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Le fichier n'a pas été trouvé.");
-            }
-
-            string[] séparationLigne = ligneLue.Split(' '); //vu que la ligne 1 a plusieurs nombres
-            string nbRelationsString = séparationLigne[2]; //on veut seulement le premier qui contient le nb de membres
-            int nbRelations = Convert.ToInt32(nbRelationsString);
-
-            return nbRelations;
-        }
-        */
-
         public List<int[]> Arête(string cheminFichierRelations)
         {
             //à partir de la ligne 2, il y a toutes les relations entre les sommets dans le fichier
