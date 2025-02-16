@@ -150,6 +150,58 @@ namespace Algo_S2_Vis_in_Paris
             return matriceP;
         }
 
+        public void ParcoursEnLargueur(int s, bool[] SommetMarqué, int[,] matriceAdj)
+        {
+            Queue<int> file = new Queue<int>();
+            file.Enqueue(s);
+            SommetMarqué[s] = true;
+
+            while(file.Count > 0)
+            {
+                s = file.Dequeue();
+                Console.Write(s + " ");
+
+                for (int i = 0; i < matriceAdj.GetLength(0); i++)
+                {
+                    if (matriceAdj[s, i] == 1)
+                    {
+                        if (SommetMarqué[i] == false)
+                        {
+                            file.Enqueue(i);
+                            SommetMarqué[i] = true;
+                        }
+                    }
+                }
+            }
+        }
+
+        public void ParcoursEnProfondeur(bool[] SommetMarqué, int[,] matriceAdj)
+        {
+            for (int i = 0; i < matriceAdj.GetLength(0); i++)
+            {
+                if (SommetMarqué[i] == false)
+                {
+                    Explorer(i, SommetMarqué, matriceAdj);
+                }
+            }
+        }
+        public void Explorer(int s, bool[] SommetMarqué, int[,] matriceAdj)
+        {
+            SommetMarqué[s] = true;
+            Console.Write(s + " ");
+
+            for (int i = 0; i < matriceAdj.GetLength(0); i++)
+            {
+                if (matriceAdj[s,i] == 1)
+                {
+                    if (SommetMarqué[i] == false)
+                    {
+                        Explorer(i, SommetMarqué, matriceAdj);
+                    }
+                }
+            }
+        }
+
         public void MatriceAdjacenceToString(int[,] matriceAdj)
         {
             for (int i = 0; i < matriceAdj.GetLength(0); i++)

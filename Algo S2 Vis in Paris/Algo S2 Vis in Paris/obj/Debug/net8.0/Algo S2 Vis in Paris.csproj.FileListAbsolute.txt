@@ -19,3 +19,24 @@ C:\Users\alexa\OneDrive\Desktop\Problème scientifique et informatique\S2-Liv-in
 C:\Users\alexa\OneDrive\Desktop\Problème scientifique et informatique\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.pdb
 C:\Users\alexa\OneDrive\Desktop\Problème scientifique et informatique\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.genruntimeconfig.cache
 C:\Users\alexa\OneDrive\Desktop\Problème scientifique et informatique\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\ref\Algo S2 Vis in Paris.dll
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Algo S2 Vis in Paris.exe
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Algo S2 Vis in Paris.deps.json
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Algo S2 Vis in Paris.runtimeconfig.json
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Algo S2 Vis in Paris.dll
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Algo S2 Vis in Paris.pdb
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\System.Private.Windows.Core.dll
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.csproj.AssemblyReference.cache
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.AssemblyInfoInputs.cache
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.AssemblyInfo.cs
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.csproj.CoreCompileInputs.cache
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.sourcelink.json
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 .984F26FE.Up2Date
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.dll
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\refint\Algo S2 Vis in Paris.dll
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.pdb
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.genruntimeconfig.cache
+C:\Users\tourn\OneDrive\Documents\ESILV\A2\S2\Algo\Projet Info\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\ref\Algo S2 Vis in Paris.dll
