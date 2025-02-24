@@ -1,0 +1,15 @@
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Algo S2 Vis in Paris.exe
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Algo S2 Vis in Paris.deps.json
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Algo S2 Vis in Paris.runtimeconfig.json
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Algo S2 Vis in Paris.dll
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Algo S2 Vis in Paris.pdb
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.AssemblyInfoInputs.cache
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.AssemblyInfo.cs
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.csproj.CoreCompileInputs.cache
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.sourcelink.json
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.dll
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\refint\Algo S2 Vis in Paris.dll
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.pdb
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 Vis in Paris.genruntimeconfig.cache
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\ref\Algo S2 Vis in Paris.dll

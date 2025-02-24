@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Algo S2 Vis in Paris/1.0.0": {
+        "runtime": {
+          "Algo S2 Vis in Paris.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Algo S2 Vis in Paris/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
