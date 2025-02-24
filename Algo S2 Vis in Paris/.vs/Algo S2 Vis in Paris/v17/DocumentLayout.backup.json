@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\tourn\\onedrive\\documents\\esilv\\a2\\s2\\algo\\projet info\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\tourn\\onedrive\\documents\\esilv\\a2\\s2\\algo\\projet info\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\graphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\graphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\tourn\\onedrive\\documents\\esilv\\a2\\s2\\algo\\projet info\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\noeud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\noeud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\tourn\\onedrive\\documents\\esilv\\a2\\s2\\algo\\projet info\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\visualisationgraphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\tourn\\onedrive\\documents\\esilv\\a2\\s2\\algo\\projet info\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\lien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\lien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\tourn\\onedrive\\documents\\esilv\\a2\\s2\\algo\\projet info\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\tourn\\onedrive\\documents\\esilv\\a2\\s2\\algo\\projet info\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\noeud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\noeud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,55 +38,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "VisualisationGraphe.cs",
               "DocumentMoniker": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\VisualisationGraphe.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\VisualisationGraphe.cs",
               "ToolTip": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\VisualisationGraphe.cs",
               "RelativeToolTip": "Algo S2 Vis in Paris\\VisualisationGraphe.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAEIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T17:24:59.747Z"
+              "WhenOpened": "2025-01-25T17:24:59.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Graphe.cs",
               "DocumentMoniker": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Graphe.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Graphe.cs",
               "ToolTip": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Graphe.cs",
               "RelativeToolTip": "Algo S2 Vis in Paris\\Graphe.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAcwKsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T09:10:35.873Z"
+              "WhenOpened": "2025-01-23T09:10:35.873Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Lien.cs",
               "DocumentMoniker": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Lien.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Lien.cs",
               "ToolTip": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Lien.cs",
               "RelativeToolTip": "Algo S2 Vis in Paris\\Lien.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T09:10:21.517Z"
+              "WhenOpened": "2025-01-23T09:10:21.517Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Noeud.cs",
               "DocumentMoniker": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Noeud.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Noeud.cs",
               "ToolTip": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Noeud.cs",
               "RelativeToolTip": "Algo S2 Vis in Paris\\Noeud.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T09:08:38.914Z"
+              "WhenOpened": "2025-01-23T09:08:38.914Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Program.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Program.cs",
