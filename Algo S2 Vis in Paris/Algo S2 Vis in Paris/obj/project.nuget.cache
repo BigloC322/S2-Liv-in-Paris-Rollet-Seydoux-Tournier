@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TwYAA6HtNM0=",
+  "dgSpecHash": "CEbuilpOAwE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
+  "projectFilePath": "C:\\Users\\alexa\\OneDrive\\Desktop\\Problème scientifique et informatique\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tourn\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.1\\microsoft.win32.systemevents.9.0.1.nupkg.sha512",
-    "C:\\Users\\tourn\\.nuget\\packages\\system.drawing.common\\9.0.1\\system.drawing.common.9.0.1.nupkg.sha512"
+    "C:\\Users\\alexa\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.2\\microsoft.win32.systemevents.9.0.2.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\system.drawing.common\\9.0.2\\system.drawing.common.9.0.2.nupkg.sha512"
   ],
   "logs": []
 }

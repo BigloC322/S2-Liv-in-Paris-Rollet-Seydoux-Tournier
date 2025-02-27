@@ -159,7 +159,7 @@ namespace Algo_S2_Vis_in_Paris
             while(file.Count > 0)
             {
                 s = file.Dequeue();
-                Console.Write(s + " ");
+                Console.Write(s + 1 + " "); //on met + 1 car le tableau va de 0 à 33 mais les membres/sommets sont de 1 à 34
 
                 for (int i = 0; i < matriceAdj.GetLength(0); i++)
                 {
@@ -175,31 +175,53 @@ namespace Algo_S2_Vis_in_Paris
             }
         }
 
-        public void ParcoursEnProfondeur(bool[] SommetMarqué, int[,] matriceAdj)
+        public void ParcoursEnProfondeur(int s, bool[] SommetMarqué, int[,] matriceAdj) //dans cette méthode, on vérifie pendant le parcours s'il y a un cycle et on l'affiche en même temps
         {
-            for (int i = 0; i < matriceAdj.GetLength(0); i++)
+            bool direSiCircuitExiste = false;
+
+            for (int i = s; i < matriceAdj.GetLength(0); i++)
             {
                 if (SommetMarqué[i] == false)
                 {
-                    Explorer(i, SommetMarqué, matriceAdj);
+                    direSiCircuitExiste = Explorer(i, SommetMarqué, matriceAdj, direSiCircuitExiste);
                 }
             }
+
+            for (int i = 0; i < s; i++)
+            {
+                if (SommetMarqué[i] == false)
+                {
+                    direSiCircuitExiste = Explorer(i, SommetMarqué, matriceAdj, direSiCircuitExiste);
+                }
+            }
+
+            if (direSiCircuitExiste == true)
+            {
+                Console.WriteLine("\nExistence d'un cycle");
+            }
         }
-        public void Explorer(int s, bool[] SommetMarqué, int[,] matriceAdj)
+
+        public bool Explorer(int s, bool[] SommetMarqué, int[,] matriceAdj, bool direSiCircuitExiste)
         {
             SommetMarqué[s] = true;
-            Console.Write(s + " ");
+            Console.Write(s + 1 + " ");
 
             for (int i = 0; i < matriceAdj.GetLength(0); i++)
             {
+                if (SommetMarqué[i] == true)
+                {
+                    direSiCircuitExiste = true;
+                }
+                
                 if (matriceAdj[s,i] == 1)
                 {
                     if (SommetMarqué[i] == false)
                     {
-                        Explorer(i, SommetMarqué, matriceAdj);
+                        Explorer(i, SommetMarqué, matriceAdj, direSiCircuitExiste);
                     }
                 }
             }
+            return direSiCircuitExiste;
         }
 
         public void MatriceAdjacenceToString(int[,] matriceAdj)

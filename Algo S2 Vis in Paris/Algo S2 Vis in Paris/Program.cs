@@ -20,7 +20,7 @@
 
             Console.WriteLine();
 
-            int[,] matriceAdj = new int[ensembleSommets.Count,ensembleSommets.Count]; //forcément la matrice d'adjacence est de la dimension du nombre de sommets
+            int[,] matriceAdj = new int[ensembleSommets.Count, ensembleSommets.Count]; //forcément la matrice d'adjacence est de la dimension du nombre de sommets
             Dictionary<int, List<int>> listeAdj = new Dictionary<int, List<int>>();
             List<List<int>> listeDesChemins = new List<List<int>>();
             Graphe g = new Graphe(matriceAdj, listeAdj, listeDesChemins);
@@ -31,6 +31,27 @@
             g.MatriceAdjacenceToString(g.GrapheAsso);
             Console.WriteLine();
             g.ListeAdjacenceToString(g.ListeAdj);
+
+            Console.WriteLine("\nVoici un parcours en largeur qui part d'un sommet aléatoirement choisi:");
+            bool[] SommetMarqué1 = new bool[membresAsso.EnsembleSommets.Count()]; //contient le membre nombre de cases que le nombre de membres
+            for (int i = 0; i < SommetMarqué1.Length; i++)
+            {
+                SommetMarqué1[i] = false;
+            }
+            Random r = new Random();
+            int s = r.Next(34);
+            g.ParcoursEnLargueur(s, SommetMarqué1, g.GrapheAsso);
+            Console.WriteLine();
+
+            Console.WriteLine("\nVoici un parcours en profondeur qui part d'un sommet aléatoirement choisi:");
+            bool[] SommetMarqué2 = new bool[membresAsso.EnsembleSommets.Count()];
+            for (int i = 0; i < SommetMarqué1.Length; i++)
+            {
+                SommetMarqué2[i] = false;
+            }
+            s = r.Next(34);
+            g.ParcoursEnProfondeur(s, SommetMarqué2, g.GrapheAsso);
+            Console.WriteLine();
 
             bool connexe = g.EstConnexe(g.GrapheAsso);
             if (connexe == true)
