@@ -8,14 +8,12 @@ namespace Algo_S2_Vis_in_Paris
     [TestClass]
     public class UnitTest1
     {
-        /// <ExplicationTests>
-        /// La première méthode teste si une case de la matrice d'ajdacence contient bien un 1 (qui indique une relation) selon une relation déjà définie dans une liste de relations
-        /// On vérifie donc que la relation est bien représentée dans la matrice d'adjacence
-        /// 
-        /// Pour le test de liste adjacence, on remplit une listeVoulue qui devrait correspondre à ce qui a été défini au-dessus, et on regarde si ce sont les mêmes
-        /// 
-        /// Pour le test de noeuds, on vérifie que la classe Noeud définit bien qu'il y a 34 sommets comme dans le fichier
-        /// <>
+        #region Explications
+        // La première méthode teste si une case de la matrice d'ajdacence contient bien un 1 (qui indique une relation) selon une relation déjà définie dans une liste de relations
+        //On vérifie donc que la relation est bien représentée dans la matrice d'adjacence
+        //Pour le test de liste adjacence, on remplit une listeVoulue qui devrait correspondre à ce qui a été défini au-dessus, et on regarde si ce sont les mêmes
+        //Pour le test de noeuds, on vérifie que la classe Noeud définit bien qu'il y a 34 sommets comme dans le fichier
+        #endregion
 
         [TestMethod]
         public void TestCréationMatriceAdjacence()

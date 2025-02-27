@@ -38,6 +38,13 @@ namespace Algo_S2_Vis_in_Paris
             set { this.listeDesChemins = value; }
         }
 
+        /// <summary>
+        /// Cette méthode créé la matrice à partir des liens définis dans la classe Liens
+        /// </summary>
+        /// <param name="matriceAdj"></param>
+        /// <param name="relations"></param>
+        /// <returns></returns>
+        
         public int[,] CréationMatriceAdjacence(int[,] matriceAdj, List<int[]> relations)
         {
             for (int i = 0; i < matriceAdj.GetLength(0); i++)
@@ -63,6 +70,13 @@ namespace Algo_S2_Vis_in_Paris
             return matriceAdj;
         }
 
+        /// <summary>
+        /// Cette méthode créé une liste d'adjacence à partir des liens définis dans la classe Liens
+        /// </summary>
+        /// <param name="relations"></param>
+        /// <param name="listeAdjacence"></param>
+        /// <returns></returns>
+        
         public Dictionary<int, List<int>> CréationListeAdj(List<int[]> relations, Dictionary<int, List<int>> listeAdjacence)
         {
             foreach (var rel in relations)
@@ -86,6 +100,12 @@ namespace Algo_S2_Vis_in_Paris
             return listeAdjacence;
         }
 
+        /// <summary>
+        /// Cette méthode vérifie si le graphe (défini par la matrice) est connexe, en utilisant les puissances de matrices
+        /// </summary>
+        /// <param name="matriceAdj"></param>
+        /// <returns></returns>
+        
         public bool EstConnexe(int[,] matriceAdj)
         {
             int dimension = matriceAdj.GetLength(0);
@@ -112,15 +132,6 @@ namespace Algo_S2_Vis_in_Paris
             Console.WriteLine();
 
             return valPositives;
-        }
-
-        public bool ContientCircuits(int[,] matriceAdj)
-        {
-            bool contientCircuits = false;
-
-
-
-            return contientCircuits;
         }
 
         public int[,] PuissanceMatrice(int puissance, int[,] matrice)
@@ -150,6 +161,13 @@ namespace Algo_S2_Vis_in_Paris
             return matriceP;
         }
 
+        /// <summary>
+        /// Cette méthode parcourt le graphe en largeur en utilisant une File
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="SommetMarqué"></param>
+        /// <param name="matriceAdj"></param>
+        
         public void ParcoursEnLargueur(int s, bool[] SommetMarqué, int[,] matriceAdj)
         {
             Queue<int> file = new Queue<int>();
@@ -175,6 +193,13 @@ namespace Algo_S2_Vis_in_Paris
             }
         }
 
+        /// <summary>
+        /// Cette méthode parcourt le graphe en profondeur en utilisant une méthode Explorer qui marque si un sommet a été exploré
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="SommetMarqué"></param>
+        /// <param name="matriceAdj"></param>
+        
         public void ParcoursEnProfondeur(int s, bool[] SommetMarqué, int[,] matriceAdj) //dans cette méthode, on vérifie pendant le parcours s'il y a un cycle et on l'affiche en même temps
         {
             bool direSiCircuitExiste = false;

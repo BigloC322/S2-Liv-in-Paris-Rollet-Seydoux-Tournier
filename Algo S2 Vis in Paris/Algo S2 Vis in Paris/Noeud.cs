@@ -21,6 +21,13 @@ namespace Algo_S2_Vis_in_Paris
             set { this.ensembleSommets = value; }
         }
 
+        /// <summary>
+        /// Cette méthode crée une liste qui contient tous les sommets
+        /// </summary>
+        /// <param name="cheminFichierRelations"></param>
+        /// <param name="ensembleSommets"></param>
+        /// <returns></returns>
+        
         public List<int> DéfinirSommets(string cheminFichierRelations, List<int> ensembleSommets)
         {
             int ligneInit = 1; //la première ligne du fichier contient les infos sur le nombre de membres et relations

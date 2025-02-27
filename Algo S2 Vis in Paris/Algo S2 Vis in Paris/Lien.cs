@@ -24,6 +24,12 @@ namespace Algo_S2_Vis_in_Paris
             set { this.relations = value; }
         }
 
+        /// <summary>
+        /// Cette méthode lis le fichier avec les liens, et met ces liens dans une liste de tableaux
+        /// </summary>
+        /// <param name="cheminFichierRelations"></param>
+        /// <returns></returns>
+        
         public List<int[]> Arête(string cheminFichierRelations)
         {
             //à partir de la ligne 2, il y a toutes les relations entre les sommets dans le fichier
