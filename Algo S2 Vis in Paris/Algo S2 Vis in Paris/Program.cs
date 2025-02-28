@@ -1,29 +1,3 @@
-<<<<<<< Updated upstream
-﻿Console.WriteLine("Paul");
-Console.WriteLine("Alex");
-Console.WriteLine("Florent");
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-Console.WriteLine("Florent");
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-=======
-<<<<<<< Updated upstream
 ﻿namespace Algo_S2_Vis_in_Paris
 {
     class Program
@@ -73,11 +47,3 @@ Console.WriteLine("Florent");
         }
     }
 }
-=======
-﻿//En route les putes  
-//lesgo
-Console.WriteLine("Paul");
-Console.WriteLine("Alex");
-//test
->>>>>>> Stashed changes
->>>>>>> Stashed changes
