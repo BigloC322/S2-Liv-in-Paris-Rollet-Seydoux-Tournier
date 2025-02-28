@@ -1,7 +1,9 @@
 ﻿Console.WriteLine("Paul");
 Console.WriteLine("Alex");
-<<<<<<< Updated upstream
 Console.WriteLine("Florent");
+<<<<<<< Updated upstream
 =======
 Console.WriteLine("Florent");
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
