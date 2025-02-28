@@ -21,6 +21,7 @@ using System.Reflection;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+580192a18daa9ba8765a084c4c3ba4033f5a3036")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+817aba656cb254c87e96f7b05171e3b8b6c42ef2")]
@@ -42,6 +43,9 @@ using System.Reflection;
 >>>>>>> Stashed changes
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+817aba656cb254c87e96f7b05171e3b8b6c42ef2")]
+>>>>>>> Stashed changes
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9175dfbc73502fd2f0ea1eac555c5880570692d2")]
 >>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("Algo S2 Vis in Paris")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Algo S2 Vis in Paris")]
