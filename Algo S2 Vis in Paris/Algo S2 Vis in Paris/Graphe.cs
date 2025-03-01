@@ -224,6 +224,10 @@ namespace Algo_S2_Vis_in_Paris
             {
                 Console.WriteLine("\nExistence d'un cycle");
             }
+            else
+            {
+                Console.WriteLine("\nPas de cycle depuis le sommet choisi");
+            }
         }
 
         public bool Explorer(int s, bool[] SommetMarqué, int[,] matriceAdj, bool direSiCircuitExiste)

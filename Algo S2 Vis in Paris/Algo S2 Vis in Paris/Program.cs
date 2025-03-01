@@ -32,6 +32,26 @@
             Console.WriteLine();
             g.ListeAdjacenceToString(g.ListeAdj);
 
+            Console.WriteLine("\n");
+            bool[] sommetmarqué = new bool[34];
+            for (int i = 0; i < sommetmarqué.Length; i++)
+            {
+                sommetmarqué[i] = false;
+            }
+            Random r = new Random();
+            int s = r.Next(34);
+            g.ParcoursEnLargueur(s, sommetmarqué, g.GrapheAsso);
+            Console.WriteLine("\n");
+
+            sommetmarqué = new bool[34];
+            for (int i = 0; i < sommetmarqué.Length; i++)
+            {
+                sommetmarqué[i] = false;
+            }
+            s = r.Next(34);
+            g.ParcoursEnProfondeur(s, sommetmarqué, g.GrapheAsso);
+            Console.WriteLine("\n");
+
             bool connexe = g.EstConnexe(g.GrapheAsso);
             if (connexe == true)
             {
