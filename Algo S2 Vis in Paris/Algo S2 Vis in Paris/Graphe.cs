@@ -9,21 +9,21 @@ namespace Algo_S2_Vis_in_Paris
 {
     internal class Graphe
     {
-        private int[,] grapheAsso;
+        private int[,] grapheMetro;
         private Dictionary<int, List<int>> listeAdj;
         private List<List<int>> listeDesChemins;
 
-        public Graphe(int[,] grapheAsso, Dictionary<int, List<int>> listeAdj, List<List<int>> listeDesChemins)
+        public Graphe(int[,] grapheMetro, Dictionary<int, List<int>> listeAdj, List<List<int>> listeDesChemins)
         {
-            this.grapheAsso = grapheAsso;
+            this.grapheMetro = grapheMetro;
             this.listeAdj = listeAdj;
             this.listeDesChemins = listeDesChemins;
         }
 
-        public int[,] GrapheAsso
+        public int[,] GrapheMetro
         {
-            get { return this.grapheAsso; }
-            set { this.grapheAsso = value; }
+            get { return this.grapheMetro; }
+            set { this.grapheMetro = value; }
         }
 
         public Dictionary<int, List<int>> ListeAdj

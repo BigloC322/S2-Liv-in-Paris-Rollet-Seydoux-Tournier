@@ -12,8 +12,8 @@ namespace Algo_S2_Vis_in_Paris
     {
         public void ReprésenterGraphe(int[,] matriceAdj)
         {
-            int longueur = 3000;
-            int largeur = 3000;
+            int longueur = 10000;
+            int largeur = 10000;
             Bitmap visuel = new Bitmap(longueur, largeur);
             Graphics graphisme = Graphics.FromImage(visuel);
 
@@ -21,7 +21,7 @@ namespace Algo_S2_Vis_in_Paris
             PointF[] positions = new PointF[sommetCount];
             float centerX = largeur / 2;
             float centerY = longueur / 2;
-            float radius = 1200;
+            float radius = 4000;
             float angleStep = 360f / sommetCount;
 
             for (int i = 0; i < sommetCount; i++)

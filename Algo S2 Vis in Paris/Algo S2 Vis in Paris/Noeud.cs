@@ -8,44 +8,80 @@ namespace Algo_S2_Vis_in_Paris
 {
     internal class Noeud
     {
-        private List<int> ensembleSommets;
+        private List<int> idStations;
+        private List<string> nomsStations;
 
-        public Noeud(List<int> ensembleSommets)
+        public Noeud(List<int> idStations, List<string> nomsStations)
         {
-            this.ensembleSommets = ensembleSommets;
+            this.idStations = idStations;
         }
 
-        public List<int> EnsembleSommets
+        public List<int> IdStations
         {
-            get { return this.ensembleSommets; }
-            set { this.ensembleSommets = value; }
+            get { return this.idStations; }
+            set { this.idStations = value; }
+        }
+
+        public List<string> NomsStations
+        {
+            get { return this.nomsStations; }
+            set { this.nomsStations = value; }
         }
 
         /// <summary>
-        /// Cette méthode crée une liste qui contient tous les sommets
+        /// Cette méthode créé une liste qui contient tous les sommets
         /// </summary>
-        /// <param name="cheminFichierRelations"></param>
-        /// <param name="ensembleSommets"></param>
+        /// <param name="cheminFichier"></param>
+        /// <param name="idStations"></param>
         /// <returns></returns>
         
-        public List<int> DéfinirSommets(string cheminFichierRelations, List<int> ensembleSommets)
+        public List<int> DéfinirIdSommets(string cheminFichier, List<int> idStations)
         {
-            int ligneInit = 1; //la première ligne du fichier contient les infos sur le nombre de membres et relations
             string ligneLue = "";
-            int indiceLigne = 1;
+            int colonneId = 0;
 
             try
             {
-                using (StreamReader lecture = new StreamReader(cheminFichierRelations))
+                using (StreamReader lecture = new StreamReader(cheminFichier))
                 {
+                    lecture.ReadLine();
                     while ((ligneLue = lecture.ReadLine()) != null)
                     {
-                        if (indiceLigne == ligneInit)
+                        string[] valeurs = ligneLue.Split(',');
+                        int[] valeursInt = new int[valeurs.Length];
+                        if (colonneId < valeurs.Length)
                         {
-                            Console.WriteLine(ligneLue);
-                            break;
+                            int idStation = Convert.ToInt16(valeurs[colonneId]);
+                            idStations.Add(idStation);
                         }
-                        indiceLigne++;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Le fichier n'a pas été trouvé. {ex.Message}");
+            }
+
+            return idStations;
+        }
+
+        public List<string> DéfinirNomsStations(string cheminFichier, List<string> nomsStations)
+        {
+            string ligneLue = "";
+            int colonneId = 1;
+
+            try
+            {
+                using (StreamReader lecture = new StreamReader(cheminFichier))
+                {
+                    lecture.ReadLine();
+                    while ((ligneLue = lecture.ReadLine()) != null)
+                    {
+                        string[] valeurs = ligneLue.Split(',');
+                        if (colonneId < valeurs.Length)
+                        {
+                            nomsStations.Add(valeurs[colonneId]);
+                        }
                     }
                 }
             }
@@ -54,25 +90,23 @@ namespace Algo_S2_Vis_in_Paris
                 Console.WriteLine("Le fichier n'a pas été trouvé.");
             }
 
-            string[] séparationLigne = ligneLue.Split(' '); //vu que la ligne 1 a plusieurs nombres
-            string nbMembresString = séparationLigne[0]; //on veut seulement le premier qui contient le nb de membres
-            int nbMembres = Convert.ToInt32(nbMembresString);
-
-            for (int i = 1; i <= nbMembres; i++)
-            {
-                ensembleSommets.Add(i); //ajout dans la liste du nb de membres, allant de 1 au nb de membres lu dans le fichier
-            }
-
-            return ensembleSommets;
+            return nomsStations;
         }
 
-        public void sommetsToString(List<int> ensembleSommets)
+        public void idStationsToString(List<int> ensembleSommets)
         {
             for (int i = 0; i < ensembleSommets.Count; i++)
             {
-                Console.Write(ensembleSommets[i] + " ");
+                Console.WriteLine(ensembleSommets[i]);
             }
-            Console.WriteLine();
+        }
+
+        public void nomsStationsToString(List<string> ensembleSommets)
+        {
+            for (int i = 0; i < ensembleSommets.Count; i++)
+            {
+                Console.WriteLine(ensembleSommets[i]);
+            }
         }
     }
 }

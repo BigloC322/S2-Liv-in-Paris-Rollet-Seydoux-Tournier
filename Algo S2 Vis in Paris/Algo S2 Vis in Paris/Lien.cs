@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,57 +12,186 @@ namespace Algo_S2_Vis_in_Paris
         ///cette classe permet de créer des liens entre les sommets selon les relations données dans le fichier
         ///
 
-        private List<int[]> relations; //un lien entre deux sommets est représenté par un tableau contenants ces deux sommets
+        private List<int[]> liensStations; //un lien entre deux sommets est représenté par un tableau contenants ces deux sommets
 
-        public Lien(List<int[]> relations)
+        public Lien(List<int[]> liensStations)
         {
-            this.relations = relations;
+            this.liensStations = liensStations;
         }
 
-        public List<int[]> Relations
+        public List<int[]> LiensStations
         { 
-            get { return relations; }
-            set { this.relations = value; }
+            get { return liensStations; }
+            set { this.liensStations = value; }
         }
 
         /// <summary>
         /// Cette méthode lis le fichier avec les liens, et met ces liens dans une liste de tableaux
         /// </summary>
-        /// <param name="cheminFichierRelations"></param>
+        /// <param name="cheminFichierMetro"></param>
         /// <returns></returns>
         
-        public List<int[]> Arête(string cheminFichierRelations)
+        public List<int[]> CréerLiens(string cheminFichierMetro)
         {
-            //à partir de la ligne 2, il y a toutes les relations entre les sommets dans le fichier
             string ligneLue = "";
-            List<int[]> relations = new List<int[]>();
+            List<int[]> relationsEntreStations = new List<int[]>();
 
             try
             {
-                using (StreamReader lecture = new StreamReader(cheminFichierRelations))
+                using (StreamReader lecture = new StreamReader(cheminFichierMetro))
                 {
-                    lecture.ReadLine(); //permet de sauter une ligne (la ligne 1 qui contient de l'info mais pas les relations)
-
+                    lecture.ReadLine();
                     while ((ligneLue = lecture.ReadLine()) != null)
                     {
-                        string[] séparation = ligneLue.Split(' '); //on casse en deux la ligne qui a les deux sommets reliés
-                        int membre1 = Convert.ToInt32(séparation[0]);
-                        int membre2 = Convert.ToInt32(séparation[1]);
-                        int[] lienEntreMembres = new int[2];
-                        lienEntreMembres[0] = membre1;
-                        lienEntreMembres[1] = membre2;
-                        relations.Add(lienEntreMembres); //on ajoute donc un tableau qui relie deux sommets 
+                        string[] valeursColonnes = ligneLue.Split(',');
+
+                        if (valeursColonnes.Length >= 4)
+                        {
+                            try
+                            {
+                                int[] lien = new int[2];
+                                lien[0] = Convert.ToInt32(valeursColonnes[0]);
+                                lien[1] = Convert.ToInt32(valeursColonnes[3]);
+
+                                relationsEntreStations.Add(lien);
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"Une erreur s'est produite lors de la lecture de fichiers. {ex.Message}");
+                            }
+                        }
                     }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Le fichier n'a pas été trouvé.");
+                Console.WriteLine($"Une erreur s'est produite.");
             }
-            return relations;
+
+            List<int[]> relationsEntreStationsReel = new List<int[]>();
+
+            foreach (var relation in relationsEntreStations)
+            {
+                if (!relation.Contains(0))
+                {
+                    relationsEntreStationsReel.Add(relation);
+                }
+            }
+
+            relationsEntreStations = relationsEntreStationsReel;
+
+            return relationsEntreStations;
         }
 
-        public void relationsToString(List<int[]> relations)
+        /// <summary>
+        /// Cette méthode permet de traiter les multiples de stations et de faire le lien entre les lignes
+        /// </summary>
+        /// <param name="idStations"></param>
+        /// <param name="nomsStations"></param>
+        /// <param name="relationsEntreStations"></param>
+        /// <param name="cheminFichierMetro"></param>
+        /// <returns></returns>
+
+        public List<int[]> GestionStationsDoubles(List<int> idStations, List<string> nomsStations, List<int[]> relationsEntreStations, string cheminFichierMetro)
+        {
+            HashSet<string> doubleStations = new HashSet<string>();
+            HashSet<string> stationsParcourues = new HashSet<string>();
+
+            foreach (var station in nomsStations)
+            {
+                string trimmedStation = station.Trim();
+
+                if (stationsParcourues.Contains(trimmedStation))
+                {
+                    doubleStations.Add(trimmedStation);
+                }
+                else
+                {
+                    stationsParcourues.Add(trimmedStation);
+                }
+            }
+
+            List<string> doubleStationsTotal = new List<string>();
+            foreach (var station in doubleStations)
+            {
+                doubleStationsTotal.Add(station);
+            }
+
+            foreach (var station in nomsStations)
+            {
+                if (doubleStationsTotal.Contains(station))
+                {
+                    doubleStationsTotal.Add(station);
+                }
+            }
+
+            foreach (var station in doubleStations)
+            {
+                doubleStationsTotal.Remove(station);
+            }
+
+            List<int> idDesDoubles = new List<int>();
+            for (int i = 0; i < nomsStations.Count; i++)
+            {
+                string trimmedStation = nomsStations[i].Trim();
+                if (doubleStationsTotal.Contains(trimmedStation))
+                {
+                    idDesDoubles.Add(idStations[i]);
+                }
+            }
+
+            Dictionary<string, int> stationEtId = new Dictionary<string, int>();
+            for (int i = 0; i < nomsStations.Count; i++)
+            {
+                string station = nomsStations[i].Trim();
+                if (stationEtId.ContainsKey(station))
+                {
+                    stationEtId[station]++;
+                }
+                else
+                {
+                    stationEtId[station] = 1;
+                }
+            }
+
+            Dictionary<string, List<int>> doubleStationEtId = new Dictionary<string, List<int>>();
+            for (int i = 0; i < nomsStations.Count; i++)
+            {
+                string station = nomsStations[i].Trim();
+                int number = idStations[i];
+
+                if (stationEtId[station] > 1)
+                {
+                    if (!doubleStationEtId.ContainsKey(station))
+                    {
+                        doubleStationEtId[station] = new List<int>();
+                    }
+                    doubleStationEtId[station].Add(number);
+                }
+            }
+
+            List<int[]> LiensEntreLignes = new List<int[]>();
+
+            foreach (var stationList in doubleStationEtId.Values)
+            {
+                for (int i = 0; i < stationList.Count; i++)
+                {
+                    for (int j = i + 1; j < stationList.Count; j++)
+                    {
+                        LiensEntreLignes.Add(new int[] { stationList[i], stationList[j] });
+                    }
+                }
+            }
+
+            for (int i = 0; i < LiensEntreLignes.Count; i++)
+            {
+                relationsEntreStations.Add(LiensEntreLignes[i]);
+            }
+            
+            return relationsEntreStations;
+        }
+
+        public void liensStationsToString(List<int[]> relations)
         {
             for (int i = 0; i < relations.Count; i++)
             {
