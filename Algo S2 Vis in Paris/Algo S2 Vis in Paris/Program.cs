@@ -5,15 +5,19 @@
         static void Main(string[] args)
         {
             string cheminFichierMetro = @"metrotest.csv";
+            string cheminFichierMetroCoord = @"MetroCoord.csv";
 
             List<int> idStations = new List<int>();
             List<string> nomsStations = new List<string>();
-            Noeud stations = new Noeud(idStations, nomsStations);
+            List<decimal[]> coord = new List<decimal[]>();
+            Noeud stations = new Noeud(idStations, nomsStations, coord);
             stations.IdStations = stations.DéfinirIdSommets(cheminFichierMetro, idStations);
             stations.NomsStations = stations.DéfinirNomsStations(cheminFichierMetro, nomsStations);
+            stations.Coord = stations.CoordStations(cheminFichierMetroCoord, stations.NomsStations, coord);
 
             //stations.idStationsToString(stations.IdStations);
             //stations.nomsStationsToString(stations.NomsStations);
+            stations.AfficherCoordTest(stations.Coord);
 
             Console.WriteLine();
             
@@ -36,10 +40,10 @@
             Console.WriteLine();
             //g.MatriceAdjacenceToString(g.GrapheMetro);
 
-            Console.WriteLine();
-            g.ListeAdj = g.CréationListeAdj(Arcs.LiensStations, listeAdj); //avec liste adj
+            //Console.WriteLine();
+            //g.ListeAdj = g.CréationListeAdj(Arcs.LiensStations, listeAdj); //avec liste adj
             
-            Console.WriteLine();
+            //Console.WriteLine();
             //g.ListeAdjacenceToString(g.ListeAdj);
 
             /*
@@ -76,6 +80,9 @@
 
             VisualisationGraphe graphismes = new VisualisationGraphe();
             graphismes.ReprésenterGraphe(g.GrapheMetro);
+
+            MétrosGoogleMaps m = new MétrosGoogleMaps();
+            m.AfficherMetrosGoogleMaps(stations.NomsStations, stations.Coord, g.GrapheMetro);
         }
     }
 }
