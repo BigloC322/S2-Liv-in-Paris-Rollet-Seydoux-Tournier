@@ -17,7 +17,7 @@
 
             //stations.idStationsToString(stations.IdStations);
             //stations.nomsStationsToString(stations.NomsStations);
-            stations.AfficherCoordTest(stations.Coord);
+            //stations.AfficherCoordTest(stations.Coord);
 
             Console.WriteLine();
             
@@ -37,7 +37,7 @@
             Graphe g = new Graphe(matriceAdj, listeAdj, listeDesChemins);
 
             g.GrapheMetro = g.CréationMatriceAdjacence(matriceAdj, Arcs.LiensStations); //avec matrice adj
-            Console.WriteLine();
+            //Console.WriteLine();
             //g.MatriceAdjacenceToString(g.GrapheMetro);
 
             //Console.WriteLine();
