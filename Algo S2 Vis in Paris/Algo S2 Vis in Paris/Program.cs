@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            string cheminFichierMetro = @"metrotest.csv";
+            string cheminFichierMetro = @"metros.csv";
             string cheminFichierMetroCoord = @"MetroCoord.csv";
 
             List<int> idStations = new List<int>();
@@ -14,22 +14,15 @@
             stations.IdStations = stations.DéfinirIdSommets(cheminFichierMetro, idStations);
             stations.NomsStations = stations.DéfinirNomsStations(cheminFichierMetro, nomsStations);
             stations.Coord = stations.CoordStations(cheminFichierMetroCoord, stations.NomsStations, coord);
-
-            //stations.idStationsToString(stations.IdStations);
-            //stations.nomsStationsToString(stations.NomsStations);
-            //stations.AfficherCoordTest(stations.Coord);
-
-            Console.WriteLine();
             
             List<int[]> liensStations = new List<int[]>();
-            Lien Arcs = new Lien(liensStations);
+            List<int> pondération = new List<int>();
+            Lien Arcs = new Lien(liensStations, pondération);
             Arcs.LiensStations = Arcs.CréerLiens(cheminFichierMetro);
             List<int[]> liens = new List<int[]>();
             liens = Arcs.GestionStationsDoubles(stations.IdStations, stations.NomsStations, Arcs.LiensStations, cheminFichierMetro);
+            Arcs.Pondération = Arcs.PondérerArcs(Arcs.LiensStations);
             Arcs.LiensStations = liens;
-            //Arcs.liensStationsToString(Arcs.LiensStations);
-
-            Console.WriteLine();
 
             int[,] matriceAdj = new int[stations.IdStations.Count, stations.IdStations.Count]; //forcément la matrice d'adjacence est de la dimension du nombre de sommets
             Dictionary<int, List<int>> listeAdj = new Dictionary<int, List<int>>();
@@ -37,14 +30,8 @@
             Graphe g = new Graphe(matriceAdj, listeAdj, listeDesChemins);
 
             g.GrapheMetro = g.CréationMatriceAdjacence(matriceAdj, Arcs.LiensStations); //avec matrice adj
-            //Console.WriteLine();
-            //g.MatriceAdjacenceToString(g.GrapheMetro);
 
-            //Console.WriteLine();
-            //g.ListeAdj = g.CréationListeAdj(Arcs.LiensStations, listeAdj); //avec liste adj
-            
-            //Console.WriteLine();
-            //g.ListeAdjacenceToString(g.ListeAdj);
+            g.ListeAdj = g.CréationListeAdj(Arcs.LiensStations, listeAdj); //avec liste adj
 
             /*
             Console.WriteLine("\n");
@@ -77,6 +64,8 @@
             {
                 Console.WriteLine("\nLe graphe n'est pas connexe.");
             }*/
+
+            //g.Haversine(stations.Coord, stations.NomsStations);
 
             VisualisationGraphe graphismes = new VisualisationGraphe();
             graphismes.ReprésenterGraphe(g.GrapheMetro);

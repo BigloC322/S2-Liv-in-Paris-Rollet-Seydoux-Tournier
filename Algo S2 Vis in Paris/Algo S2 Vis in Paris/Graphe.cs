@@ -273,5 +273,63 @@ namespace Algo_S2_Vis_in_Paris
                 Console.WriteLine(string.Join(", ", sommet.Value));
             }
         }
+
+        public double Haversine(List<decimal[]> coord, List<string> nomsStations)
+        {
+            Console.WriteLine("Test Haversine:\n");
+            Console.WriteLine("Choisir une station de départ.");
+            string stationDep = Convert.ToString(Console.ReadLine());
+            do
+            {
+                Console.WriteLine("\nNom de station pas valide, réessayez.");
+                stationDep = Convert.ToString(Console.ReadLine());
+            }
+            while (!nomsStations.Contains(stationDep));
+            Console.WriteLine("Choisir une station d'arrivée.");
+            string stationArr = Convert.ToString(Console.ReadLine());
+            do
+            {
+                Console.WriteLine("\nNom de station pas valide, réessayez.");
+                stationArr = Convert.ToString(Console.ReadLine());
+            }
+            while (!nomsStations.Contains(stationArr));
+
+            int indiceStationDep = 0;
+            int indiceStationArr = 0;
+            for (int i = 0; i < nomsStations.Count; i++)
+            {
+                if (nomsStations[i] == stationDep)
+                {
+                    indiceStationDep = i;
+                }
+                if (nomsStations[i] == stationArr)
+                {
+                    indiceStationArr = i;
+                }
+            }
+
+            decimal latitudeDépart = coord[indiceStationDep][0];
+            decimal longitudeDépart = coord[indiceStationDep][1];
+            decimal latitudeArrivée = coord[indiceStationArr][0];
+            decimal longitudeArrivée = coord[indiceStationArr][1];
+
+            double latitudeDépartRadians = Convert.ToDouble(latitudeDépart) * (Math.PI / 180);
+            double longitudeDépartRadians = Convert.ToDouble(longitudeDépart) * (Math.PI / 180);
+            double latitudeArrivéeRadians = Convert.ToDouble(latitudeArrivée) * (Math.PI / 180);
+            double longitudeArrivéeRadians = Convert.ToDouble(longitudeArrivée) * (Math.PI / 180);
+
+            double deltaPhi = latitudeArrivéeRadians - latitudeDépartRadians;
+            double deltaLambda = longitudeArrivéeRadians - longitudeDépartRadians;
+
+            double moitiéDeltaPhi = (double) deltaPhi / 2;
+            double moitiéDeltaLambda = (double) deltaLambda / 2;
+            double racine = Math.Sqrt( (Math.Sin(moitiéDeltaPhi) * Math.Sin(moitiéDeltaPhi)) + Math.Cos(Convert.ToDouble(latitudeDépart)) * Math.Cos(Convert.ToDouble(latitudeArrivée)) * Math.Sin(moitiéDeltaLambda) * Math.Sin(moitiéDeltaLambda) );
+            double arcsin = Math.Asin(racine);
+            double distance = 2 * 6371 * arcsin;
+
+            Console.WriteLine("\nLa distance entre " + stationDep + " et " + stationArr + " est de " + distance + " kilomètres");
+
+            return distance;
+        }
     }
 }

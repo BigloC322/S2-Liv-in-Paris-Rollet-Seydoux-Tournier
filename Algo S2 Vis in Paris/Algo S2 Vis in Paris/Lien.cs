@@ -13,16 +13,24 @@ namespace Algo_S2_Vis_in_Paris
         ///
 
         private List<int[]> liensStations; //un lien entre deux sommets est représenté par un tableau contenants ces deux sommets
+        private List<int> pondération;
 
-        public Lien(List<int[]> liensStations)
+        public Lien(List<int[]> liensStations, List<int> pondération)
         {
             this.liensStations = liensStations;
+            this.pondération = pondération;
         }
 
         public List<int[]> LiensStations
         { 
             get { return liensStations; }
             set { this.liensStations = value; }
+        }
+
+        public List<int> Pondération
+        {
+            get { return pondération; }
+            set { this.pondération = value; }
         }
 
         /// <summary>
@@ -189,6 +197,20 @@ namespace Algo_S2_Vis_in_Paris
             }
             
             return relationsEntreStations;
+        }
+
+        public List<int> PondérerArcs(List<int[]> liensStations)
+        {
+            Random r = new Random();
+            int poidsAléatoireMinutes = 0;
+            List<int> poids = new List<int>();
+            for (int i = 0; i < liensStations.Count(); i++)
+            {
+                poidsAléatoireMinutes = r.Next(1, 4);
+                poids.Add(poidsAléatoireMinutes);
+            }
+
+            return poids;
         }
 
         public void liensStationsToString(List<int[]> relations)
