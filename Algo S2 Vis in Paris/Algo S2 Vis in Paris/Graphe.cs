@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -251,6 +252,104 @@ namespace Algo_S2_Vis_in_Paris
                 }
             }
             return direSiCircuitExiste;
+        }
+
+        public static int[,] DijkstraAlgorithm(int s, bool[] SommetMarqué, int[,] matriceAdj)
+        {
+            int[,] trajetMin = new int[2, matriceAdj.GetLength(0)];
+            int n = matriceAdj.GetLength(0);
+            int verif = 1;
+
+            for (int i = 0; i < n; i++)
+            {
+                trajetMin[0, i] = i;
+                trajetMin[1, i] = int.MaxValue;
+            }
+
+            trajetMin[1, s] = 0;
+
+            while (verif == 1)
+            {
+                verif = 0;
+                int minDistance = int.MaxValue, minIndex = -1;
+
+                for (int i = 0; i < n; i++)
+                {
+                    if (!SommetMarqué[i] && trajetMin[1, i] < minDistance)
+                    {
+                        minDistance = trajetMin[1, i];
+                        minIndex = i;
+                    }
+                }
+
+                if (minIndex == -1) break;
+
+                SommetMarqué[minIndex] = true;
+
+                for (int i = 0; i < n; i++)
+                {
+                    if (matriceAdj[minIndex, i] > 0 && !SommetMarqué[i] && trajetMin[1, minIndex] + matriceAdj[minIndex, i] < trajetMin[1, i])
+                    {
+                        trajetMin[1, i] = trajetMin[1, minIndex] + matriceAdj[minIndex, i];
+                    }
+                }
+
+                for (int i = 0; i < n; i++)
+                {
+                    if (!SommetMarqué[i])
+                    {
+                        verif = 1;
+                        break;
+                    }
+                }
+            }
+            return trajetMin;
+        }
+
+        public static (int[], int[]) BellmanFordAlgorithm(int s, int[,] edges, int n)
+        {
+            int[] distance = new int[n];
+            int[] predecessor = new int[n];
+
+            // Initialisation
+            for (int i = 0; i < n; i++)
+            {
+                distance[i] = int.MaxValue;
+                predecessor[i] = -1;
+            }
+            distance[s] = 0;
+
+            // Relaxation des arêtes |V| - 1 fois
+            for (int k = 0; k < n - 1; k++)
+            {
+                for (int i = 0; i < edges.GetLength(0); i++)
+                {
+                    int u = edges[i, 0];
+                    int v = edges[i, 1];
+                    int w = edges[i, 2];
+
+                    if (distance[u] != int.MaxValue && distance[u] + w < distance[v])
+                    {
+                        distance[v] = distance[u] + w;
+                        predecessor[v] = u;
+                    }
+                }
+            }
+
+            // Détection des cycles de poids négatif
+            for (int i = 0; i < edges.GetLength(0); i++)
+            {
+                int u = edges[i, 0];
+                int v = edges[i, 1];
+                int w = edges[i, 2];
+
+                if (distance[u] != int.MaxValue && distance[u] + w < distance[v])
+                {
+                    throw new Exception("Le graphe contient un cycle de poids négatif.");
+                }
+            }
+
+            return (distance, predecessor);
         }
 
         public void MatriceAdjacenceToString(int[,] matriceAdj)
