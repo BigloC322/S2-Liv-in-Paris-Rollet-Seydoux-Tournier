@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            string cheminFichierMetro = @"metros.csv";
+            /*string cheminFichierMetro = @"metros.csv";
             string cheminFichierMetroCoord = @"MetroCoord.csv";
 
             List<int> idStations = new List<int>();
@@ -63,7 +63,7 @@
             else
             {
                 Console.WriteLine("\nLe graphe n'est pas connexe.");
-            }*/
+            }
 
             //g.Haversine(stations.Coord, stations.NomsStations);
 
@@ -72,6 +72,11 @@
 
             MétrosGoogleMaps m = new MétrosGoogleMaps();
             m.AfficherMetrosGoogleMaps(stations.NomsStations, stations.Coord, g.GrapheMetro);
+            */
+            //test sql
+            ConnexionSQL connexionSQL = new ConnexionSQL();
+            connexionSQL.AfficherCommandes();
+            Console.ReadLine();
         }
     }
 }
