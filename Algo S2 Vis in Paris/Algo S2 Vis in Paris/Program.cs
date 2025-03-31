@@ -65,7 +65,7 @@
                 Console.WriteLine("\nLe graphe n'est pas connexe.");
             }
 
-            //g.Haversine(stations.Coord, stations.NomsStations);
+            g.Haversine(stations.Coord, stations.NomsStations);
 
             VisualisationGraphe graphismes = new VisualisationGraphe();
             graphismes.ReprésenterGraphe(g.GrapheMetro);
