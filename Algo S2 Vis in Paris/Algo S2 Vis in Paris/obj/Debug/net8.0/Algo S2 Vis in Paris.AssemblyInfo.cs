@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Algo S2 Vis in Paris")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4102e11cc87ae2e31ce6443f12d1287f9480ff2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+662b2122f05df2e52d76958e9a01d5a40d554243")]
 [assembly: System.Reflection.AssemblyProductAttribute("Algo S2 Vis in Paris")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Algo S2 Vis in Paris")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
