@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Crypto.Digests;
 
 namespace Algo_S2_Vis_in_Paris
 {
@@ -30,7 +31,7 @@ namespace Algo_S2_Vis_in_Paris
         //avoir
         //inserer
         //
-        public void AfficherCommande()
+        public void AfficherCommande(string nomtable) // Test pour une base random 
         {
             if (maConnexion == null || maConnexion.State != System.Data.ConnectionState.Open)
             {
@@ -38,20 +39,31 @@ namespace Algo_S2_Vis_in_Paris
                 return;
             }
 
-            string query = "SELECT * FROM Commande";
+            string requetetable = $"SELECT * FROM {nomtable}";
+            string requeteinfos = $"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{nomtable}' AND TABLE_SCHEMA = 'LIVIP';";
+            List<string> listeinfos = new List<string>();
             try
             {
-                using (MySqlCommand command = new MySqlCommand(query, maConnexion))
-                using (MySqlDataReader reader = command.ExecuteReader())
-                {
-                    Console.WriteLine("\nListe des commandes :\n");
-                    Console.WriteLine("---------------------------------------------------------");
-                    Console.WriteLine("ID  | Date Cmd  | Date Livr | Dép. | Montant | Dest. | Statut | Client | Produit");
-                    Console.WriteLine("---------------------------------------------------------");
-
-                    while (reader.Read())
+                using (MySqlCommand infos = new MySqlCommand(requeteinfos, maConnexion))
+                using (MySqlDataReader reader1 = infos.ExecuteReader())
+                {                    
+                    while (reader1.Read())
                     {
-                        Console.WriteLine($"{reader["ID_Commande"]} | {reader["Date_Commande"]} | {reader["Date_Livraison"]} | {reader["Adresse_de_livraison"]}");
+                        listeinfos.Add(reader1["COLUMN_NAME"].ToString());
+                    }
+                }
+                using (MySqlCommand command = new MySqlCommand(requetetable, maConnexion))
+                using (MySqlDataReader reader2 = command.ExecuteReader())
+                {
+                    Console.WriteLine($"\nListe des {nomtable} :\n");
+                    while (reader2.Read())
+                    {
+                        Console.Write($"{reader2[listeinfos[0]]} ");
+                        for (int i=1; i<listeinfos.Count;i++)
+                        {
+                            Console.Write($"| {reader2[listeinfos[i]]} ");
+                        }
+                        Console.WriteLine();
                     }
                 }
             }
@@ -64,6 +76,10 @@ namespace Algo_S2_Vis_in_Paris
                 maConnexion.Close();
                 Console.WriteLine("Connexion fermée.");
             }
+        }
+        public void Ajouter(string nomtable, object modif)
+        {
+
         }
     }
 }

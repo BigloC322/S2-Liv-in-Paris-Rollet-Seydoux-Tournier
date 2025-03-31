@@ -64,7 +64,7 @@
             {
                 Console.WriteLine("\nLe graphe n'est pas connexe.");
             }
-        */
+        
             //g.Haversine(stations.Coord, stations.NomsStations);
 
             VisualisationGraphe graphismes = new VisualisationGraphe();
@@ -72,10 +72,11 @@
 
             MétrosGoogleMaps m = new MétrosGoogleMaps();
             m.AfficherMetrosGoogleMaps(stations.NomsStations, stations.Coord, g.GrapheMetro);
-           
+         */  
             //test sql
             ConnexionSQL connexionSQL = new ConnexionSQL();
-            connexionSQL.AfficherCommande();
+            string tableétude = "Client";
+            connexionSQL.AfficherCommande(tableétude);
             Console.ReadLine();
         }
     }
