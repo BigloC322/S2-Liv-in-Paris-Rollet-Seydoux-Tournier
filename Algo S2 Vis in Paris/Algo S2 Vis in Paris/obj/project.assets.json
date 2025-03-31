@@ -1730,40 +1730,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tourn\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\alexa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "projectUniqueName": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Info\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Desktop\\Problème scientifique et informatique\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
       "projectName": "Algo S2 Vis in Paris",
-      "projectPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Info\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
-      "packagesPath": "C:\\Users\\tourn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Info\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
-      "projectName": "Algo S2 Vis in Paris",
-      "projectPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
-      "packagesPath": "C:\\Users\\tourn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\obj\\",
->>>>>>> Stashed changes
-=======
-      "projectUniqueName": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
-      "projectName": "Algo S2 Vis in Paris",
-      "projectPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
-      "packagesPath": "C:\\Users\\tourn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\obj\\",
->>>>>>> Stashed changes
+      "projectPath": "C:\\Users\\alexa\\OneDrive\\Desktop\\Problème scientifique et informatique\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
+      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexa\\OneDrive\\Desktop\\Problème scientifique et informatique\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\tourn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1771,6 +1750,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1783,20 +1763,12 @@
         "warnAsError": [
           "NU1605"
         ]
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
       },
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
-=======
-=======
->>>>>>> Stashed changes
       }
->>>>>>> Stashed changes
     },
     "frameworks": {
       "net8.0": {
@@ -1822,21 +1794,21 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\alexa\\OneDrive\\Desktop\\Problème scientifique et informatique\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
