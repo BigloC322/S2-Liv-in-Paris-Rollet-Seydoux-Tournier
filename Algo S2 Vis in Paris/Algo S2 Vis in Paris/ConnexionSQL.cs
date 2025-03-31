@@ -30,7 +30,7 @@ namespace Algo_S2_Vis_in_Paris
         //avoir
         //inserer
         //
-        public void AfficherCommandes()
+        public void AfficherCommande()
         {
             if (maConnexion == null || maConnexion.State != System.Data.ConnectionState.Open)
             {
