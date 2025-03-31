@@ -1730,23 +1730,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\flore\\.nuget\\packages\\": {},
+    "C:\\Users\\tourn\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      "projectUniqueName": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Info\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
       "projectName": "Algo S2 Vis in Paris",
-      "projectPath": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
-      "packagesPath": "C:\\Users\\flore\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\obj\\",
+      "projectPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Info\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
+      "packagesPath": "C:\\Users\\tourn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Info\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
+      "projectName": "Algo S2 Vis in Paris",
+      "projectPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
+      "packagesPath": "C:\\Users\\tourn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\obj\\",
+>>>>>>> Stashed changes
+=======
+      "projectUniqueName": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
+      "projectName": "Algo S2 Vis in Paris",
+      "projectPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
+      "packagesPath": "C:\\Users\\tourn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\flore\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tourn\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1767,13 +1783,20 @@
         "warnAsError": [
           "NU1605"
         ]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
       },
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
+=======
+=======
+>>>>>>> Stashed changes
+      }
+>>>>>>> Stashed changes
     },
     "frameworks": {
       "net8.0": {
@@ -1799,12 +1822,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
       }
     }
   }
