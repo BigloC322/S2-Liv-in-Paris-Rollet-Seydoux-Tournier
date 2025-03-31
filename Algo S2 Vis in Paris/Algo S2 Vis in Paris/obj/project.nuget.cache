@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "dgSpecHash": "KaM8FpWiQJA=",
   "success": true,
   "projectFilePath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Info\\Projet Info\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
@@ -37,6 +38,12 @@
     "C:\\Users\\tourn\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
     "C:\\Users\\tourn\\.nuget\\packages\\zstdsharp.port\\0.8.0\\zstdsharp.port.0.8.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "WJGbXSsa8HbM6NnEsEqFkXFoT/8eVx24hVwIH5XquLcq5lzPvBoCmDGP8lT2xbaJGcXTJ3PO/JOqreac6WcdDA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tourn\\OneDrive\\Documents\\ESILV\\A2\\S2\\Algo\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> Stashed changes
 =======
   "dgSpecHash": "WJGbXSsa8HbM6NnEsEqFkXFoT/8eVx24hVwIH5XquLcq5lzPvBoCmDGP8lT2xbaJGcXTJ3PO/JOqreac6WcdDA==",
   "success": true,
