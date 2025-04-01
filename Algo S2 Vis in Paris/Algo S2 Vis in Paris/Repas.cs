@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace Algo_S2_Vis_in_Paris
 {
@@ -31,6 +32,26 @@ namespace Algo_S2_Vis_in_Paris
             this.nationalité = nationalité;
             this.photo = photo;
             this.idCommande = idCommande;
+        }
+        public void AjouterRepas(Repas test)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"INSERT INTO REPAS VALUES ('{test.IdPlat}','{test.NomDuPlat}','{test.Type}','{test.NombreDePortion},{test.DateDeFabrication}','{test.DateDePeremption}','{test.PrixUnitaire}','{test.Nationalité}','{test.Photo}','{test.IdCommande}');";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la création du repas : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
+                Console.WriteLine("Connexion fermée.");
+            }
         }
         public string IdPlat
         {

@@ -21,7 +21,28 @@ namespace Algo_S2_Vis_in_Paris
             this.iD_Entreprise = iD_Entreprise;
             this.iD_Utilisateur = iD_Utilisateur;
         }
-        
+
+        public void AjouterClient(Client test)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"INSERT INTO CLIENT VALUES ('{test.ID_Particulier}','{test.ID_Entreprise}','{test.ID_Utilisateur}');";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la création du client : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
+                Console.WriteLine("Connexion fermée.");
+            }
+        }
+
         public string ID_Particulier
         {
             get { return this.iD_Particulier; }
