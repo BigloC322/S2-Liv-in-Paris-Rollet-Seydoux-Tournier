@@ -13,9 +13,9 @@ namespace Algo_S2_Vis_in_Paris
         ///
 
         private List<int[]> liensStations; //un lien entre deux sommets est représenté par un tableau contenants ces deux sommets
-        private List<int> pondération;
+        private List<decimal> pondération;
 
-        public Lien(List<int[]> liensStations, List<int> pondération)
+        public Lien(List<int[]> liensStations, List<decimal> pondération)
         {
             this.liensStations = liensStations;
             this.pondération = pondération;
@@ -27,7 +27,7 @@ namespace Algo_S2_Vis_in_Paris
             set { this.liensStations = value; }
         }
 
-        public List<int> Pondération
+        public List<decimal> Pondération
         {
             get { return pondération; }
             set { this.pondération = value; }
@@ -199,18 +199,49 @@ namespace Algo_S2_Vis_in_Paris
             return relationsEntreStations;
         }
 
-        public List<int> PondérerArcs(List<int[]> liensStations)
-        {
-            Random r = new Random();
-            int poidsAléatoireMinutes = 0;
-            List<int> poids = new List<int>();
-            for (int i = 0; i < liensStations.Count(); i++)
-            {
-                poidsAléatoireMinutes = r.Next(1, 4);
-                poids.Add(poidsAléatoireMinutes);
-            }
+        public List<decimal> PondérerArcs(List<int[]> liensStations, string cheminPonderation)
 
-            return poids;
+        {
+            if (!File.Exists(cheminPonderation))
+            {
+                throw new FileNotFoundException("Le fichier de pondération n'a pas été trouvé.", cheminPonderation);
+            }
+            List<decimal> poidsArcs = new List<decimal>();
+
+            try
+            {
+                string[] lignes = File.ReadAllLines(cheminPonderation);
+                foreach (string ligne in lignes)
+                {
+                    if (decimal.TryParse(ligne, out decimal poids))
+                    {
+                        if (poids > 0)
+                        {
+                            poidsArcs.Add(poids);
+                        }
+
+                    }
+                    else
+                    {
+                        throw new FormatException("Le format du poids dans le fichier est incorrect.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erreur lors de la lecture du fichier de pondération.", ex);
+            }
+            Console.WriteLine(poidsArcs.Count + " " + liensStations.Count);
+            if (poidsArcs.Count > liensStations.Count)
+            {
+                throw new InvalidOperationException("Le nombre de poids dépasse le nombre d'arcs.");
+            }
+            while (poidsArcs.Count < liensStations.Count)
+            {
+                poidsArcs.Add(2); // Ajoute un poids par défaut de 0 pour les arcs sans poids
+            }
+            return poidsArcs;
+
         }
 
         public void liensStationsToString(List<int[]> relations)
