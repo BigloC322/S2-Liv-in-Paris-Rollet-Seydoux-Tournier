@@ -6,6 +6,7 @@
         {
             string cheminFichierMetro = @"metros.csv";
             string cheminFichierMetroCoord = @"MetroCoord.csv";
+            string cheminPonderation = @"";
 
             List<int> idStations = new List<int>();
             List<string> nomsStations = new List<string>();
@@ -16,12 +17,12 @@
             stations.Coord = stations.CoordStations(cheminFichierMetroCoord, stations.NomsStations, coord);
             
             List<int[]> liensStations = new List<int[]>();
-            List<int> pondération = new List<int>();
+            List<decimal> pondération = new List<decimal>();
             Lien Arcs = new Lien(liensStations, pondération);
             Arcs.LiensStations = Arcs.CréerLiens(cheminFichierMetro);
             List<int[]> liens = new List<int[]>();
             liens = Arcs.GestionStationsDoubles(stations.IdStations, stations.NomsStations, Arcs.LiensStations, cheminFichierMetro);
-            Arcs.Pondération = Arcs.PondérerArcs(Arcs.LiensStations);
+            //Arcs.Pondération = Arcs.PondérerArcs(Arcs.LiensStations, cheminPonderation);
             Arcs.LiensStations = liens;
 
             int[,] matriceAdj = new int[stations.IdStations.Count, stations.IdStations.Count]; //forcément la matrice d'adjacence est de la dimension du nombre de sommets
