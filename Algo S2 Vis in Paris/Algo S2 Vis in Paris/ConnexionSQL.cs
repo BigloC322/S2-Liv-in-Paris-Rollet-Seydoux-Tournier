@@ -11,12 +11,11 @@ namespace Algo_S2_Vis_in_Paris
     internal class ConnexionSQL
     {
         private MySqlConnection maConnexion;
-
-        public ConnexionSQL()
-        {
-            string connexionString = "SERVER=localhost;PORT=3307;" +
+        private string connexionString = "SERVER=localhost;PORT=3307;" +
                                      "DATABASE=LIVIP;" +
                                      "UID=root;PASSWORD=root";
+        public ConnexionSQL()
+        {
             try
             {
                 maConnexion = new MySqlConnection(connexionString);
@@ -28,9 +27,11 @@ namespace Algo_S2_Vis_in_Paris
                 Console.WriteLine("Erreur de connexion : " + e.Message);
             }
         }
-        //avoir
-        //inserer
-        //
+        public MySqlConnection MaConnexion
+        {
+            get { return this.maConnexion; }
+            set { this.maConnexion = value; }
+        }
         public void AfficherCommande(string nomtable) // Test pour une base random 
         {
             if (maConnexion == null || maConnexion.State != System.Data.ConnectionState.Open)
@@ -76,10 +77,6 @@ namespace Algo_S2_Vis_in_Paris
                 maConnexion.Close();
                 Console.WriteLine("Connexion fermée.");
             }
-        }
-        public void Ajouter(string nomtable, object modif)
-        {
-
         }
     }
 }

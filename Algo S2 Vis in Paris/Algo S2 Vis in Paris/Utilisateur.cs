@@ -1,4 +1,5 @@
 ﻿using Google.Protobuf.WellKnownTypes;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,26 @@ namespace Algo_S2_Vis_in_Paris
             this.mot_de_passe = mot_de_passe;
             this.pref_alimentaire = pref_alimentaire;
             this.station_de_métro = station_de_métro;
+        }
+        public void AjouterUtilisateur(Utilisateur test)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"INSERT INTO UTILISATEUR VALUES ('{test.ID_Utilisateur}','{test.Nom}','{test.Prénom}','{test.Adresse}','{test.Téléphone}','{test.Adresse_email}','{test.Pseudo}','{test.Mot_de_passe}','{test.Pref_alimentaire}','{test.Station_de_métro}');";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la création de l'utilisateur : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
+                Console.WriteLine("Connexion fermée.");
+            }
         }
 
         public string ID_Utilisateur

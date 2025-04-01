@@ -72,12 +72,9 @@
 
             MétrosGoogleMaps m = new MétrosGoogleMaps();
             m.AfficherMetrosGoogleMaps(stations.NomsStations, stations.Coord, g.GrapheMetro);
-         */  
-            //test sql
-            ConnexionSQL connexionSQL = new ConnexionSQL();
-            string tableétude = "Client";
-            connexionSQL.AfficherCommande(tableétude);
-            Console.ReadLine();
+        */
+        Utilisateur test = new Utilisateur("123456", "Schaeffer", "Noémie","Toulouse rue de merde","06787878","nomeri@pute","scheffpute","dddd","halal","Sablons");
+        test.AjouterUtilisateur(test);
         }
     }
 }

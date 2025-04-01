@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\connexionsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\connexionsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,24 +15,20 @@
       "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\noeud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\connexionsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\connexionsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\graphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\graphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\m\u00E9trosgooglemaps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\m\u00E9trosgooglemaps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\lien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\lien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\visualisationgraphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\visualisationgraphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,8 +39,12 @@
       "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\cuisinier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\graphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\graphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\lien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\lien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\visualisationgraphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|solutionrelative:algo s2 vis in paris\\visualisationgraphe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A94C67B-9026-4351-A768-86754AF154AF}|Algo S2 Vis in Paris\\Algo S2 Vis in Paris.csproj|c:\\users\\flore\\desktop\\s2-liv-in-paris-rollet-seydoux-tournier\\algo s2 vis in paris\\algo s2 vis in paris\\contient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,20 +74,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "M\u00E9trosGoogleMaps.cs",
-              "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\M\u00E9trosGoogleMaps.cs",
-              "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\M\u00E9trosGoogleMaps.cs",
-              "ToolTip": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\M\u00E9trosGoogleMaps.cs",
-              "RelativeToolTip": "Algo S2 Vis in Paris\\M\u00E9trosGoogleMaps.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAtwCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T13:10:06.348Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -96,14 +84,14 @@
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Program.cs",
               "ToolTip": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Program.cs",
               "RelativeToolTip": "Algo S2 Vis in Paris\\Program.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAQwE4AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwEwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T22:10:56.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "Graphe.cs",
               "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Graphe.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Graphe.cs",
@@ -111,23 +99,25 @@
               "RelativeToolTip": "Algo S2 Vis in Paris\\Graphe.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYBAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T22:11:14.83Z"
+              "WhenOpened": "2025-02-28T22:11:14.83Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Client.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Client.cs",
               "ToolTip": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Client.cs",
               "RelativeToolTip": "Algo S2 Vis in Paris\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T16:04:13.684Z"
+              "WhenOpened": "2025-03-26T16:04:13.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Ingredient.cs",
               "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Ingredient.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Ingredient.cs",
@@ -135,36 +125,38 @@
               "RelativeToolTip": "Algo S2 Vis in Paris\\Ingredient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T16:10:27.596Z"
+              "WhenOpened": "2025-03-26T16:10:27.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ConnexionSQL.cs",
               "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\ConnexionSQL.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\ConnexionSQL.cs",
               "ToolTip": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\ConnexionSQL.cs",
               "RelativeToolTip": "Algo S2 Vis in Paris\\ConnexionSQL.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwFEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwDgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T22:09:24.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Cuisinier.cs",
               "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Cuisinier.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Cuisinier.cs",
               "ToolTip": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Cuisinier.cs",
               "RelativeToolTip": "Algo S2 Vis in Paris\\Cuisinier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T16:04:23.257Z"
+              "WhenOpened": "2025-03-26T16:04:23.257Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Lien.cs",
               "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Lien.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Lien.cs",
@@ -189,7 +181,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Utilisateur.cs",
+              "ToolTip": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Utilisateur.cs",
+              "RelativeToolTip": "Algo S2 Vis in Paris\\Utilisateur.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:09:06.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "M\u00E9trosGoogleMaps.cs",
+              "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\M\u00E9trosGoogleMaps.cs",
+              "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\M\u00E9trosGoogleMaps.cs",
+              "ToolTip": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\M\u00E9trosGoogleMaps.cs",
+              "RelativeToolTip": "Algo S2 Vis in Paris\\M\u00E9trosGoogleMaps.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAtwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T13:10:06.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "VisualisationGraphe.cs",
               "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\VisualisationGraphe.cs",
               "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\VisualisationGraphe.cs",
@@ -198,18 +216,6 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T22:11:18.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Utilisateur.cs",
-              "DocumentMoniker": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Utilisateur.cs",
-              "RelativeDocumentMoniker": "Algo S2 Vis in Paris\\Utilisateur.cs",
-              "ToolTip": "C:\\Users\\flore\\Desktop\\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\\Algo S2 Vis in Paris\\Algo S2 Vis in Paris\\Utilisateur.cs",
-              "RelativeToolTip": "Algo S2 Vis in Paris\\Utilisateur.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T16:09:06.053Z"
             },
             {
               "$type": "Document",

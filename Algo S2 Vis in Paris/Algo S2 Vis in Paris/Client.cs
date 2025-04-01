@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+using System.Xml;
 
 namespace Algo_S2_Vis_in_Paris
 {
@@ -18,7 +21,7 @@ namespace Algo_S2_Vis_in_Paris
             this.iD_Entreprise = iD_Entreprise;
             this.iD_Utilisateur = iD_Utilisateur;
         }
-
+        
         public string ID_Particulier
         {
             get { return this.iD_Particulier; }
