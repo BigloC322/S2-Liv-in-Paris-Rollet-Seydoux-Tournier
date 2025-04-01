@@ -40,6 +40,26 @@ namespace Algo_S2_Vis_in_Paris
                 Console.WriteLine("Connexion fermée.");
             }
         }
+        public void SupprimerIngredient(Ingredient test)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"DELETE FROM INGREDIENT WHERE ID_INGREDIENT='{test.ID_Ingrédient}';";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la suppression de  l'ingredient : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
+                Console.WriteLine("Connexion fermée.");
+            }
+        }
 
         public string ID_Ingrédient
         {
@@ -55,7 +75,7 @@ namespace Algo_S2_Vis_in_Paris
         public string Ingrédient
         {
             get { return this.ingrédient; }
-            set { this.ingrédient = value;
+            set { this.ingrédient = value; }
         }
     }
 }

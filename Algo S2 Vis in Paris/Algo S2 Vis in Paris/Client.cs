@@ -42,6 +42,26 @@ namespace Algo_S2_Vis_in_Paris
                 Console.WriteLine("Connexion fermée.");
             }
         }
+        public void SupprimerClient(Client test)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"DELETE FROM CLIENT WHERE ID_PARTICULIER='{test.ID_Particulier}';";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la suppression du Client : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
+                Console.WriteLine("Connexion fermée.");
+            }
+        }
 
         public string ID_Particulier
         {

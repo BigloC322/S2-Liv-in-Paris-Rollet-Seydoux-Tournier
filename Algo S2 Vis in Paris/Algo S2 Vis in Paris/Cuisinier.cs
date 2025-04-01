@@ -38,6 +38,26 @@ namespace Algo_S2_Vis_in_Paris
                 Console.WriteLine("Connexion fermée.");
             }
         }
+        public void SupprimerCuisinier(Cuisinier test)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"DELETE FROM CUISINIER WHERE ID_CUSINIER='{test.ID_Cuisinier}';";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la suppression du cuisinier : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
+                Console.WriteLine("Connexion fermée.");
+            }
+        }
 
 
 

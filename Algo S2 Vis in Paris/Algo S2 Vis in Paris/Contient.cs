@@ -39,6 +39,26 @@ namespace Algo_S2_Vis_in_Paris
                 Console.WriteLine("Connexion fermée.");
             }
         }
+        public void SupprimerContient(Contient test)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"DELETE FROM CONTIENT WHERE ID_PLAT='{test.IdPlat}';";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la suppression de contient : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
+                Console.WriteLine("Connexion fermée.");
+            }
+        }
 
         public string IdPlat
         {

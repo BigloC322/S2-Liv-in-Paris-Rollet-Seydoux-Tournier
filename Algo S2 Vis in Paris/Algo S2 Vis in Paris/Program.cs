@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            /*
             string cheminFichierMetro = @"metros.csv";
             string cheminFichierMetroCoord = @"MetroCoord.csv";
             string cheminPonderation = @"TempsEntreStation";
@@ -35,7 +36,7 @@
 
             g.ListeAdj = g.CréationListeAdj(Arcs.LiensStations, listeAdj); //avec liste adj
 
-        /*
+        
             Console.WriteLine("\n");
             bool[] sommetmarqué = new bool[34];
             for (int i = 0; i < sommetmarqué.Length; i++)
@@ -75,8 +76,8 @@
             MétrosGoogleMaps m = new MétrosGoogleMaps();
             m.AfficherMetrosGoogleMaps(stations.NomsStations, stations.Coord, g.GrapheMetro);
         */
-        Utilisateur test = new Utilisateur("123456", "Schaeffer", "Noémie","Toulouse rue de merde","06787878","nomeri@pute","scheffpute","dddd","halal","Sablons");
-        test.AjouterUtilisateur(test);
+            Avis test = new Avis("A1", 5, "Excellent service", "CO1", "P1");
+        test.SupprimerAvis(test);
         }
     }
 }

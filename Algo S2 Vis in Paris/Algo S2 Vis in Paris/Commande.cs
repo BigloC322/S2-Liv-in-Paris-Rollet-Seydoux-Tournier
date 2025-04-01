@@ -52,6 +52,26 @@ namespace Algo_S2_Vis_in_Paris
                 Console.WriteLine("Connexion fermée.");
             }
         }
+        public void SupprimerCommande(Commande test)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"DELETE FROM COMMANDE WHERE ID_COMMANDE='{test.IdCommande}';";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la suppression de la commande : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
+                Console.WriteLine("Connexion fermée.");
+            }
+        }
         public string IdCommande
         {
             get { return idCommande; }
