@@ -56,7 +56,7 @@ namespace Algo_S2_Vis_in_Paris
                     lecture.ReadLine();
                     while ((ligneLue = lecture.ReadLine()) != null)
                     {
-                        string[] valeurs = ligneLue.Split(';');
+                        string[] valeurs = ligneLue.Split(',');
                         int[] valeursInt = new int[valeurs.Length];
                         if (colonneId < valeurs.Length)
                         {

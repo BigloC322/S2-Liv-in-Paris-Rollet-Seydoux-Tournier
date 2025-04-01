@@ -6,7 +6,7 @@
         {
             string cheminFichierMetro = @"metros.csv";
             string cheminFichierMetroCoord = @"MetroCoord.csv";
-            string cheminPonderation = @"";
+            string cheminPonderation = @"TempsEntreStation";
 
             List<int> idStations = new List<int>();
             List<string> nomsStations = new List<string>();
@@ -20,6 +20,7 @@
             List<decimal> pondération = new List<decimal>();
             Lien Arcs = new Lien(liensStations, pondération);
             Arcs.LiensStations = Arcs.CréerLiens(cheminFichierMetro);
+            Arcs.liensStationsToString(Arcs.LiensStations);
             List<int[]> liens = new List<int[]>();
             liens = Arcs.GestionStationsDoubles(stations.IdStations, stations.NomsStations, Arcs.LiensStations, cheminFichierMetro);
             //Arcs.Pondération = Arcs.PondérerArcs(Arcs.LiensStations, cheminPonderation);
