@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace Algo_S2_Vis_in_Paris
 {
@@ -30,6 +31,46 @@ namespace Algo_S2_Vis_in_Paris
             this.statut = statut;
             this.idCuisinier = idCuisinier;
             this.idParticulier = idParticulier;
+        }
+        public void AjouterCommande(Commande test)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"INSERT INTO COMMANDE VALUES ('{test.IdCommande}','{test.DateCommande}','{test.DateLivraison}','{test.AdresseDeLaCuisine}','{test.PrixTotal}','{this.AdresseDeLivraison}','{test.Statut}','{test.IdCuisinier}','{this.idParticulier}');";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la création de la commande : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
+                Console.WriteLine("Connexion fermée.");
+            }
+        }
+        public void SupprimerCommande(Commande test)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"DELETE FROM COMMANDE WHERE ID_COMMANDE='{test.IdCommande}';";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la suppression de la commande : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
+                Console.WriteLine("Connexion fermée.");
+            }
         }
         public string IdCommande
         {
