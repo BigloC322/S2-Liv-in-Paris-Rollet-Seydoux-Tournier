@@ -7,7 +7,7 @@ INSERT INTO Utilisateur VALUES
 ('U5', 'Thomas', 'Lucas', '90 Rue E', '0605050505', 'lucas.thomas@email.com', 'lucast', 'mdp567', 'Végan', 'Nation');
 
 -- Peuplement de la table Cusinier
-INSERT INTO Cusinier VALUES
+INSERT INTO Cuisinier VALUES
 ('C1', 'U1'),
 ('C2', 'U2'),
 ('C3', 'U3'),
@@ -55,7 +55,7 @@ INSERT INTO Avis VALUES
 ('A5', 1, 'Mauvaise expérience', 'CO5', 'P5');
 
 -- Peuplement de la table Plat
-INSERT INTO Plat VALUES
+INSERT INTO REPAS VALUES
 ('PL1', 'Salade César', 'Entrée', '2', '2025-02-01', '2025-02-05', '10.50', 'Française', 'salade.jpg', 'CO1'),
 ('PL2', 'Poulet Tikka', 'Plat', '3', '2025-02-02', '2025-02-06', '12.00', 'Indienne', 'tikka.jpg', 'CO2'),
 ('PL3', 'Sushi', 'Plat', '4', '2025-02-03', '2025-02-07', '15.00', 'Japonaise', 'sushi.jpg', 'CO3'),

@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS LIVIP;
 USE LIVIP;
 
 CREATE TABLE Utilisateur(
-   ID_Utilisatieur VARCHAR(50),
+   ID_Utilisateur VARCHAR(50),
    Nom_ VARCHAR(50),
    Prénom VARCHAR(50),
    Adresse VARCHAR(50),
@@ -13,15 +13,15 @@ CREATE TABLE Utilisateur(
    Mot_de_passe_ VARCHAR(50),
    Préférence_alimentaire VARCHAR(50),
    Station_de_métro VARCHAR(50),
-   PRIMARY KEY(ID_Utilisatieur)
+   PRIMARY KEY(ID_Utilisateur)
 );
 
-CREATE TABLE Cusinier(
+CREATE TABLE Cuisinier(
    ID_Cuisinier VARCHAR(50),
-   ID_Utilisatieur VARCHAR(50) NOT NULL,
+   ID_Utilisateur VARCHAR(50) NOT NULL,
    PRIMARY KEY(ID_Cuisinier),
-   UNIQUE(ID_Utilisatieur),
-   FOREIGN KEY(ID_Utilisatieur) REFERENCES Utilisateur(ID_Utilisatieur)
+   UNIQUE(ID_Utilisateur),
+   FOREIGN KEY(ID_Utilisateur) REFERENCES Utilisateur(ID_Utilisateur)
 );
 
 CREATE TABLE Entreprise(
@@ -41,11 +41,11 @@ CREATE TABLE Ingrédient(
 CREATE TABLE Client(
    ID_Particulier VARCHAR(50),
    ID_Entreprise VARCHAR(50),
-   ID_Utilisatieur VARCHAR(50) NOT NULL,
+   ID_Utilisateur VARCHAR(50) NOT NULL,
    PRIMARY KEY(ID_Particulier),
-   UNIQUE(ID_Utilisatieur),
+   UNIQUE(ID_Utilisateur),
    FOREIGN KEY(ID_Entreprise) REFERENCES Entreprise(ID_Entreprise),
-   FOREIGN KEY(ID_Utilisatieur) REFERENCES Utilisateur(ID_Utilisatieur)
+   FOREIGN KEY(ID_Utilisateur) REFERENCES Utilisateur(ID_Utilisateur)
 );
 
 CREATE TABLE Commande(
@@ -59,7 +59,7 @@ CREATE TABLE Commande(
    ID_Cuisinier VARCHAR(50) NOT NULL,
    ID_Particulier VARCHAR(50) NOT NULL,
    PRIMARY KEY(ID_Commande),
-   FOREIGN KEY(ID_Cuisinier) REFERENCES Cusinier(ID_Cuisinier),
+   FOREIGN KEY(ID_Cuisinier) REFERENCES Cuisinier(ID_Cuisinier),
    FOREIGN KEY(ID_Particulier) REFERENCES Client(ID_Particulier)
 );
 
@@ -74,7 +74,7 @@ CREATE TABLE Avis(
    FOREIGN KEY(ID_Particulier) REFERENCES Client(ID_Particulier)
 );
 
-CREATE TABLE Plat(
+CREATE TABLE REPAS(
    ID_Plat VARCHAR(50),
    Nom_du_plat_ VARCHAR(50),
    Type_ VARCHAR(50),
@@ -93,6 +93,6 @@ CREATE TABLE Contient(
    ID_Plat VARCHAR(50),
    ID_Ingredient VARCHAR(50),
    PRIMARY KEY(ID_Plat, ID_Ingredient),
-   FOREIGN KEY(ID_Plat) REFERENCES Plat(ID_Plat),
+   FOREIGN KEY(ID_Plat) REFERENCES REPAS(ID_Plat),
    FOREIGN KEY(ID_Ingredient) REFERENCES Ingrédient(ID_Ingredient)
 );
