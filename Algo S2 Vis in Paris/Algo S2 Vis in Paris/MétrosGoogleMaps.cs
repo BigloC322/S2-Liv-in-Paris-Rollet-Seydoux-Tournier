@@ -89,7 +89,7 @@ namespace Algo_S2_Vis_in_Paris
             x += translationX;
             y += translationY;
 
-            Console.WriteLine($"Latitude: {latitude}, Longitude: {longitude} => X: {x}, Y: {y}");
+            //Console.WriteLine($"Latitude: {latitude}, Longitude: {longitude} => X: {x}, Y: {y}");
 
             return new PointF(x, y);
         }
