@@ -219,7 +219,6 @@ namespace Algo_S2_Vis_in_Paris
                         {
                             poidsArcs.Add(poids);
                         }
-
                     }
                     else
                     {
@@ -231,17 +230,16 @@ namespace Algo_S2_Vis_in_Paris
             {
                 throw new Exception("Erreur lors de la lecture du fichier de pondération.", ex);
             }
-            Console.WriteLine(poidsArcs.Count + " " + liensStations.Count);
             if (poidsArcs.Count > liensStations.Count)
             {
                 throw new InvalidOperationException("Le nombre de poids dépasse le nombre d'arcs.");
             }
             while (poidsArcs.Count < liensStations.Count)
             {
-                poidsArcs.Add(2); // Ajoute un poids par défaut de 0 pour les arcs sans poids
+                poidsArcs.Add(2); // Ajoute un poids par défaut de 2 pour les arcs sans poids
             }
+            
             return poidsArcs;
-
         }
 
         public void liensStationsToString(List<int[]> relations)

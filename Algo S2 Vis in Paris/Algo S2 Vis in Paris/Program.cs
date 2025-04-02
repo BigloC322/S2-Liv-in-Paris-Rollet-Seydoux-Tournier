@@ -6,7 +6,7 @@
         {
             string cheminFichierMetro = @"metros.csv";
             string cheminFichierMetroCoord = @"MetroCoord.csv";
-            string cheminPonderation = @"TempsEntreStation";
+            string cheminPonderation = @"TempsEntreStation.txt";
 
             List<int> idStations = new List<int>();
             List<string> nomsStations = new List<string>();
@@ -20,10 +20,9 @@
             List<decimal> pondération = new List<decimal>();
             Lien Arcs = new Lien(liensStations, pondération);
             Arcs.LiensStations = Arcs.CréerLiens(cheminFichierMetro);
-            Arcs.liensStationsToString(Arcs.LiensStations);
             List<int[]> liens = new List<int[]>();
             liens = Arcs.GestionStationsDoubles(stations.IdStations, stations.NomsStations, Arcs.LiensStations, cheminFichierMetro);
-            //Arcs.Pondération = Arcs.PondérerArcs(Arcs.LiensStations, cheminPonderation);
+            Arcs.Pondération = Arcs.PondérerArcs(Arcs.LiensStations, cheminPonderation);
             Arcs.LiensStations = liens;
 
             int[,] matriceAdj = new int[stations.IdStations.Count, stations.IdStations.Count]; //forcément la matrice d'adjacence est de la dimension du nombre de sommets
@@ -68,15 +67,15 @@
             }
         
             //g.Haversine(stations.Coord, stations.NomsStations);
-
+        */
             VisualisationGraphe graphismes = new VisualisationGraphe();
             graphismes.ReprésenterGraphe(g.GrapheMetro);
 
             MétrosGoogleMaps m = new MétrosGoogleMaps();
             m.AfficherMetrosGoogleMaps(stations.NomsStations, stations.Coord, g.GrapheMetro);
-        */
-        Utilisateur test = new Utilisateur("123456", "Schaeffer", "Noémie","Toulouse rue de merde","06787878","nomeri@pute","scheffpute","dddd","halal","Sablons");
-        test.AjouterUtilisateur(test);
+        
+        //Utilisateur test = new Utilisateur("123456", "Schaeffer", "Noémie","Toulouse rue de merde","06787878","nomeri@pute","scheffpute","dddd","halal","Sablons");
+        //test.AjouterUtilisateur(test);
         }
     }
 }
