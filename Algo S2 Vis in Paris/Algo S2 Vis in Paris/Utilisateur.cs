@@ -1,10 +1,13 @@
 ﻿using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Asn1.X509.SigI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Algo_S2_Vis_in_Paris
 {
@@ -20,10 +23,12 @@ namespace Algo_S2_Vis_in_Paris
         private string mot_de_passe;
         private string pref_alimentaire;
         private string station_de_métro;
+        private int cpt = 5;
 
-        public Utilisateur(string iD_Utilisateur, string nom, string prénom, string adresse, string téléphone, string adresse_email, string pseudo, string mot_de_passe, string pref_alimentaire, string station_de_métro)
+        public Utilisateur(string nom, string prénom, string adresse, string téléphone, string adresse_email, string pseudo, string mot_de_passe, string pref_alimentaire, string station_de_métro)
         {
-            this.iD_Utilisateur = iD_Utilisateur;
+            cpt++;
+            this.iD_Utilisateur = "U"+Convert.ToString(cpt);
             this.nom = nom;
             this.prénom = prénom;
             this.adresse = adresse;
@@ -34,7 +39,7 @@ namespace Algo_S2_Vis_in_Paris
             this.pref_alimentaire = pref_alimentaire;
             this.station_de_métro = station_de_métro;
         }
-        public void AjouterUtilisateur(Utilisateur test)
+        public static void AjouterUtilisateur(Utilisateur test)
         {
             ConnexionSQL a = new ConnexionSQL();
             string requetetable = $"INSERT INTO UTILISATEUR VALUES ('{test.ID_Utilisateur}','{test.Nom}','{test.Prénom}','{test.Adresse}','{test.Téléphone}','{test.Adresse_email}','{test.Pseudo}','{test.Mot_de_passe}','{test.Pref_alimentaire}','{test.Station_de_métro}');";
@@ -52,6 +57,41 @@ namespace Algo_S2_Vis_in_Paris
             {
                 a.MaConnexion.Close();
                 Console.WriteLine("Connexion fermée.");
+            }
+        }
+        public static void RechercherUtilisateur(string pseudo, string mdp)
+        {
+            ConnexionSQL a = new ConnexionSQL();
+            string requetetable = $"SELECT * FROM Utilisateur WHERE Pseudo = '{pseudo}' AND Mot_de_passe_ = '{mdp}';";
+            try
+            {
+                MySqlCommand command = a.MaConnexion.CreateCommand();
+                command.CommandText = requetetable;
+                command.ExecuteNonQuery();
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.HasRows) // Vérifie si un résultat est trouvé
+                    {
+                        while (reader.Read()) // Lire ligne par ligne
+                        {
+                            Console.Clear();
+                            Console.WriteLine($" Vous êtes l'utilisateur {reader["ID_Utilisateur"]},Bienvenue {reader["Nom_"]}, Email: {reader["Adresse_email"]}");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Aucun utilisateur trouvé.");
+                    }
+                }
+
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur lors de la recherche de l'utilisateur : " + e.Message);
+            }
+            finally
+            {
+                a.MaConnexion.Close();
             }
         }
         public void SupprimerUtilisateur(Utilisateur test)

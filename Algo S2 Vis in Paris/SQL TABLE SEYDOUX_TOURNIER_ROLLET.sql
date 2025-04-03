@@ -21,7 +21,7 @@ CREATE TABLE Cuisinier(
    ID_Utilisateur VARCHAR(50) NOT NULL,
    PRIMARY KEY(ID_Cuisinier),
    UNIQUE(ID_Utilisateur),
-   FOREIGN KEY(ID_Utilisateur) REFERENCES Utilisateur(ID_Utilisateur)
+   FOREIGN KEY(ID_Utilisateur) REFERENCES Utilisateur(ID_Utilisateur) ON DELETE CASCADE
 );
 
 CREATE TABLE Entreprise(
@@ -45,7 +45,7 @@ CREATE TABLE Client(
    PRIMARY KEY(ID_Particulier),
    UNIQUE(ID_Utilisateur),
    FOREIGN KEY(ID_Entreprise) REFERENCES Entreprise(ID_Entreprise),
-   FOREIGN KEY(ID_Utilisateur) REFERENCES Utilisateur(ID_Utilisateur)
+   FOREIGN KEY(ID_Utilisateur) REFERENCES Utilisateur(ID_Utilisateur) ON DELETE CASCADE
 );
 
 CREATE TABLE Commande(
@@ -60,7 +60,7 @@ CREATE TABLE Commande(
    ID_Particulier VARCHAR(50) NOT NULL,
    PRIMARY KEY(ID_Commande),
    FOREIGN KEY(ID_Cuisinier) REFERENCES Cuisinier(ID_Cuisinier),
-   FOREIGN KEY(ID_Particulier) REFERENCES Client(ID_Particulier)
+   FOREIGN KEY(ID_Particulier) REFERENCES Client(ID_Particulier) ON DELETE CASCADE
 );
 
 CREATE TABLE Avis(
@@ -86,13 +86,13 @@ CREATE TABLE REPAS(
    Photo VARCHAR(50),
    ID_Commande VARCHAR(50) NOT NULL,
    PRIMARY KEY(ID_Plat),
-   FOREIGN KEY(ID_Commande) REFERENCES Commande(ID_Commande)
+   FOREIGN KEY(ID_Commande) REFERENCES Commande(ID_Commande) ON DELETE CASCADE
 );
 
 CREATE TABLE Contient(
    ID_Plat VARCHAR(50),
    ID_Ingredient VARCHAR(50),
    PRIMARY KEY(ID_Plat, ID_Ingredient),
-   FOREIGN KEY(ID_Plat) REFERENCES REPAS(ID_Plat),
-   FOREIGN KEY(ID_Ingredient) REFERENCES Ingrédient(ID_Ingredient)
+   FOREIGN KEY(ID_Plat) REFERENCES REPAS(ID_Plat) ON DELETE CASCADE,
+   FOREIGN KEY(ID_Ingredient) REFERENCES Ingrédient(ID_Ingredient) ON DELETE CASCADE
 );
