@@ -352,6 +352,71 @@ namespace Algo_S2_Vis_in_Paris
             return (distance, predecessor);
         }
 
+        public static (int[], int[]) FloydWarshall(int[,] matriceAdj, int nbSommets)
+        {
+            int[,] distances = new int[nbSommets, nbSommets];
+            int[,] predecesseurs = new int[nbSommets, nbSommets];
+
+            // Initialisation
+            for (int i = 0; i < nbSommets; i++)
+            {
+                for (int j = 0; j < nbSommets; j++)
+                {
+                    if (i == j)
+                    {
+                        distances[i, j] = 0;
+                        predecesseurs[i, j] = -1;
+                    }
+                    else if (matriceAdj[i, j] != 0)
+                    {
+                        distances[i, j] = matriceAdj[i, j];
+                        predecesseurs[i, j] = i;
+                    }
+                    else
+                    {
+                        distances[i, j] = int.MaxValue;
+                        predecesseurs[i, j] = -1;
+                    }
+                }
+            }
+
+            for (int k = 0; k < nbSommets; k++)
+            {
+                for (int i = 0; i < nbSommets; i++)
+                {
+                    for (int j = 0; j < nbSommets; j++)
+                    {
+                        if (distances[i, k] != int.MaxValue && distances[k, j] != int.MaxValue &&
+                            distances[i, k] + distances[k, j] < distances[i, j])
+                        {
+                            distances[i, j] = distances[i, k] + distances[k, j];
+                            predecesseurs[i, j] = predecesseurs[k, j];
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < nbSommets; i++)
+            {
+                if (distances[i, i] < 0)
+                {
+                    throw new Exception("Le graphe contient un cycle de poids négatif.");
+                }
+            }
+
+            int depart = 0; // Peut être changé
+            int[] distanceDepuisDepart = new int[nbSommets];
+            int[] predecesseurDepuisDepart = new int[nbSommets];
+
+            for (int i = 0; i < nbSommets; i++)
+            {
+                distanceDepuisDepart[i] = distances[depart, i];
+                predecesseurDepuisDepart[i] = predecesseurs[depart, i];
+            }
+
+            return (distanceDepuisDepart, predecesseurDepuisDepart);
+        }
+
         public void MatriceAdjacenceToString(int[,] matriceAdj)
         {
             for (int i = 0; i < matriceAdj.GetLength(0); i++)
