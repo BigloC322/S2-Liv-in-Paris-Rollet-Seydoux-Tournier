@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Globalization;
+using MySql.Data.MySqlClient;
+using Mysqlx.Session;
+using MySqlX.XDevAPI.Common;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Algo_S2_Vis_in_Paris
 {
@@ -130,11 +135,197 @@ namespace Algo_S2_Vis_in_Paris
                 case 3:
                     Console.Clear();
                     Console.WriteLine("Bienvenue dans le module de statistiques");
+                    Console.WriteLine("Que voulez voir : \n0 : Afficher par cuisinier le nombre de livraisons effectuées\n1 : Afficher les commandes selon une période de temps\n2 : Afficher la moyenne des prix des commandes\n3 : Afficher la moyenne des comptes clients\n4 : Afficher la liste des commandes pour un client selon la nationalité des plats, la période ");
+                    int o = Convert.ToInt32(Console.ReadLine());
+                    switch (o)
+                    {
+                        case 0:
+                            string cmd0 = $"SELECT C.ID_Cuisinier, COUNT(C.ID_Commande) AS Nombre_de_livraisons FROM Commande C GROUP BY C.ID_Cuisinier;";
+                            ConnexionSQL a = new ConnexionSQL();
+                            try
+                            {
+                                MySqlCommand command = a.MaConnexion.CreateCommand();
+                                command.CommandText = cmd0;
+                                command.ExecuteNonQuery();
+                                using(MySqlDataReader reader = command.ExecuteReader())
+                                {
+                                    if (reader.HasRows)
+                                    {
+                                        while (reader.Read())
+                                        {
+                                            string idCuisinier = reader["ID_Cuisinier"].ToString();
+                                            int nombreLivraisons = Convert.ToInt32(reader["Nombre_de_livraisons"]);
+                                            Console.WriteLine($"Cuisinier ID: {idCuisinier}, Nombre de livraisons: {nombreLivraisons}");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Aucune donnée trouvée.");
+                                    }
+                                }
+                            }
+                            catch (MySqlException e)
+                            {
+                                Console.WriteLine("Erreur lors de la lecture : " + e.Message);
+                            }
+                            finally
+                            {
+                                a.MaConnexion.Close();
+                                Console.WriteLine("Connexion fermée.");
+                            }
+                            break;
+                        case 1:
+                            Console.WriteLine("Rentrez la date de début et de fin sur lesquelles vous voulez étudier (pour rappel du format : AAAA-MM-DD)");
+                            string datedébut = Console.ReadLine();
+                            string datefin = Console.ReadLine();
+                            string cmd1 = $"SELECT * FROM Commande WHERE Date_Commande BETWEEN '{datedébut}' AND '{datefin}';";
+                            ConnexionSQL b = new ConnexionSQL();
+                            try
+                            {
+                                MySqlCommand command = b.MaConnexion.CreateCommand();
+                                command.CommandText = cmd1;
+                                command.ExecuteNonQuery();
+                                using (MySqlDataReader reader = command.ExecuteReader())
+                                {
+                                    if (reader.HasRows)
+                                    {
+                                        while (reader.Read())
+                                        {
+                                            string idCommande = reader["ID_Commande"].ToString();
+                                            string dateCommande = reader["Date_Commande"].ToString();
+                                            string adresseLivraison = reader["Adresse_de_livraison"].ToString();
+                                            Console.WriteLine($"Commande ID: {idCommande}, Date: {dateCommande}, Adresse de livraison: {adresseLivraison}");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Aucune donnée trouvée.");
+                                    }
+                                }
+                            }
+                            catch (MySqlException e)
+                            {
+                                Console.WriteLine("Erreur lors de la lecture : " + e.Message);
+                            }
+                            finally
+                            {
+                                b.MaConnexion.Close();
+                                Console.WriteLine("Connexion fermée.");
+                            }
+                            break;
+                        case 2:
+                            string cmd2 = $"SELECT AVG(CAST(Prix_Total AS DECIMAL(10, 2))) AS Moyenne_Prix_Commandes FROM Commande;";
+                            ConnexionSQL c = new ConnexionSQL();
+                            try
+                            {
+                                MySqlCommand command = c.MaConnexion.CreateCommand();
+                                command.CommandText = cmd2;
+                                object result = command.ExecuteScalar();
+                                using (MySqlDataReader reader = command.ExecuteReader())
+                                {
+                                    if (reader.HasRows)
+                                    {
+                                        while (reader.Read())
+                                        {
+                                            Console.WriteLine($"Moyenne des prix des commandes : {result}");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Aucune donnée trouvée.");
+                                    }
+                                }
+                            }
+                            catch (MySqlException e)
+                            {
+                                Console.WriteLine("Erreur lors de la lecture : " + e.Message);
+                            }
+                            finally
+                            {
+                                c.MaConnexion.Close();
+                                Console.WriteLine("Connexion fermée.");
+                            }
 
+                            break;
+                        case 3:
+                            string cmd3 = "$SELECT AVG(Nombre_Commandes) AS Moyenne_Commandes_Par_Client FROM (SELECT COUNT(ID_Commande) AS Nombre_Commandes FROM Commande GROUP BY ID_Particulier ) AS Client_Commandes;";
+                            ConnexionSQL d = new ConnexionSQL();
+                            try
+                            {
+                                MySqlCommand command = d.MaConnexion.CreateCommand();
+                                command.CommandText = cmd3;
+                                command.ExecuteNonQuery();
+                                object result = command.ExecuteScalar();
+                                using (MySqlDataReader reader = command.ExecuteReader())
+                                {
+                                    if (reader.HasRows)
+                                    {
+                                        while (reader.Read())
+                                        {
+                                            Console.WriteLine($"Moyenne des commandes par client : {result}");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Aucune donnée trouvée.");
+                                    }
+                                }
+                            }
+                            catch (MySqlException e)
+                            {
+                                Console.WriteLine("Erreur lors de la lecture : " + e.Message);
+                            }
+                            finally
+                            {
+                                d.MaConnexion.Close();
+                                Console.WriteLine("Connexion fermée.");
+                            }
+                            break;
+                        case 4:
+                            Console.WriteLine("Rentrez l'idclient recherché (pour rappel de la forme U+un chiffre)");
+                            string idclient = Console.ReadLine();
+                            string cmd4 = $"SELECT Co.ID_Commande, R.Nom_du_plat_, R.Nationalité, Co.Date_Commande FROM Commande Co JOIN REPAS R ON Co.ID_Commande = R.ID_Commande JOIN Client C ON Co.ID_Particulier = C.ID_Particulier WHERE C.ID_Particulier = '{idclient}';";
+                            ConnexionSQL u = new ConnexionSQL();
+                            try
+                            {
+                                MySqlCommand command = u.MaConnexion.CreateCommand();
+                                command.CommandText = cmd4;
+                                command.ExecuteNonQuery();
+                                using (MySqlDataReader reader = command.ExecuteReader())
+                                {
+                                    if (reader.HasRows)
+                                    {
+                                        while (reader.Read())
+                                        {
+                                            string idCommande = reader["ID_Commande"].ToString();
+                                            string nomPlat = reader["Nom_du_plat_"].ToString();
+                                            string nationalite = reader["Nationalité"].ToString();
+                                            string dateCommande = reader["Date_Commande"].ToString();
+                                            Console.WriteLine($"Commande ID: {idCommande}, Plat: {nomPlat}, Nationalité: {nationalite}, Date: {dateCommande}");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Aucune commande trouvée.");
+                                    }
+                                }
+                            }
+                            catch (MySqlException z)
+                            {
+                                Console.WriteLine("Erreur lors de la lecture : " + z.Message);
+                            }
+                            finally
+                            {
+                                u.MaConnexion.Close();
+                                Console.WriteLine("Connexion fermée.");
+                            }
+                            break;
+                    }
                     break;
                 case 4:
                     Console.Clear();
                     Console.WriteLine("Bienvenue dans les plus de l'appli");
+                    Console.WriteLine("RDV dans la V2 de notre appli !  ");
                     break;
             }
         }
