@@ -11,7 +11,7 @@ namespace Algo_S2_Vis_in_Paris
     {
         static void Main(string[] args)
         {
-            #region truc de merde d'alex
+            #region Partie Code
             /*
            string cheminFichierMetro = @"metros.csv";
            string cheminFichierMetroCoord = @"MetroCoord.csv";
@@ -83,8 +83,6 @@ namespace Algo_S2_Vis_in_Paris
                MétrosGoogleMaps m = new MétrosGoogleMaps();
                m.AfficherMetrosGoogleMaps(stations.NomsStations, stations.Coord, g.GrapheMetro);
 
-           //Utilisateur test = new Utilisateur("123456", "Schaeffer", "Noémie","Toulouse rue de merde","06787878","nomeri@pute","scheffpute","dddd","halal","Sablons");
-           //test.AjouterUtilisateur(test);
            */
             #endregion
             Console.WriteLine("================================================== ");
