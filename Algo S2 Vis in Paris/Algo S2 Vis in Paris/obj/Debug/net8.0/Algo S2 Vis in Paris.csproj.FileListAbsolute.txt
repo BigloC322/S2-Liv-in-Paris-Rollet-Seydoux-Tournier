@@ -88,3 +88,4 @@ C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Pa
 C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
 C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\obj\Debug\net8.0\Algo S2 .984F26FE.Up2Date
+C:\Users\flore\Desktop\S2-Liv-in-Paris-Rollet-Seydoux-Tournier\Algo S2 Vis in Paris\Algo S2 Vis in Paris\bin\Debug\net8.0\Newtonsoft.Json.dll

@@ -1,0 +1,399 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <REPAS>
+    <ID_Plat>PL1</ID_Plat>
+    <Nom_du_plat_>Butter Chicken</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-03</Date_de_péremption>
+    <Prix_Unitaire>15.90</Prix_Unitaire>
+    <Nationalité>Indienne</Nationalité>
+    <Photo>Butter Chicken.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL10</ID_Plat>
+    <Nom_du_plat_>Soupe oignons</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>9.30</Prix_Unitaire>
+    <Nationalité>Française</Nationalité>
+    <Photo>Soupe aux oignons.jpg</Photo>
+    <ID_Commande>CO2</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL11</ID_Plat>
+    <Nom_du_plat_>Steak Tartare</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>2</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-01</Date_de_péremption>
+    <Prix_Unitaire>17.20</Prix_Unitaire>
+    <Nationalité>Française</Nationalité>
+    <Photo>Steak Tartare Frites.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL12</ID_Plat>
+    <Nom_du_plat_>Sushis</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>3</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>17.50</Prix_Unitaire>
+    <Nationalité>Japonaise</Nationalité>
+    <Photo>Sushis.jpg</Photo>
+    <ID_Commande>CO2</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL13</ID_Plat>
+    <Nom_du_plat_>Tacos</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>2</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-05</Date_de_péremption>
+    <Prix_Unitaire>11.50</Prix_Unitaire>
+    <Nationalité>Mexicaine</Nationalité>
+    <Photo>Tacos.jpg</Photo>
+    <ID_Commande>CO2</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL14</ID_Plat>
+    <Nom_du_plat_>Kebab</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>2</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-05</Date_de_péremption>
+    <Prix_Unitaire>8.50</Prix_Unitaire>
+    <Nationalité>Turque</Nationalité>
+    <Photo>Kebab.jpg</Photo>
+    <ID_Commande>CO2</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL15</ID_Plat>
+    <Nom_du_plat_>Moelleux</Nom_du_plat_>
+    <Type_>Dessert</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>7.00</Prix_Unitaire>
+    <Nationalité>Classique</Nationalité>
+    <Photo>Moelleux.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL16</ID_Plat>
+    <Nom_du_plat_>Caviar 30g</Nom_du_plat_>
+    <Type_>Entrée</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-01</Date_de_péremption>
+    <Prix_Unitaire>64.00</Prix_Unitaire>
+    <Nationalité>Russe</Nationalité>
+    <Photo>Caviar.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL17</ID_Plat>
+    <Nom_du_plat_>Homard</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-01</Date_de_péremption>
+    <Prix_Unitaire>55.00</Prix_Unitaire>
+    <Nationalité>Américaine</Nationalité>
+    <Photo>Homard.jpg</Photo>
+    <ID_Commande>CO2</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL18</ID_Plat>
+    <Nom_du_plat_>Crêpes</Nom_du_plat_>
+    <Type_>Dessert</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-03</Date_de_péremption>
+    <Prix_Unitaire>9.50</Prix_Unitaire>
+    <Nationalité>Américaine</Nationalité>
+    <Photo>Crêpes.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL19</ID_Plat>
+    <Nom_du_plat_>Makis thon rouge</Nom_du_plat_>
+    <Type_>Entrée</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-01</Date_de_péremption>
+    <Prix_Unitaire>14.00</Prix_Unitaire>
+    <Nationalité>Japonaise</Nationalité>
+    <Photo>Makis thon rouge.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL2</ID_Plat>
+    <Nom_du_plat_>Burger</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>2</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-03</Date_de_péremption>
+    <Prix_Unitaire>11.20</Prix_Unitaire>
+    <Nationalité>Américaine</Nationalité>
+    <Photo>Burger.jpg</Photo>
+    <ID_Commande>CO2</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL20</ID_Plat>
+    <Nom_du_plat_>Cabillaud beurre blanc</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>22.00</Prix_Unitaire>
+    <Nationalité>Française</Nationalité>
+    <Photo>Cabillaud.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL21</ID_Plat>
+    <Nom_du_plat_>Côte de boeuf</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>23.00</Prix_Unitaire>
+    <Nationalité>Française</Nationalité>
+    <Photo>Côte de boeuf.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL22</ID_Plat>
+    <Nom_du_plat_>Tataki de thon</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>17.00</Prix_Unitaire>
+    <Nationalité>Japonaise</Nationalité>
+    <Photo>Tataki de thon.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL23</ID_Plat>
+    <Nom_du_plat_>Chili con carne</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-04</Date_de_péremption>
+    <Prix_Unitaire>12.00</Prix_Unitaire>
+    <Nationalité>Mexicaine</Nationalité>
+    <Photo>Chili con carne.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL24</ID_Plat>
+    <Nom_du_plat_>Poulet coréen</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>16.00</Prix_Unitaire>
+    <Nationalité>Coréenne</Nationalité>
+    <Photo>Poulet Corée.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL25</ID_Plat>
+    <Nom_du_plat_>Pizza Regina</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-05</Date_de_péremption>
+    <Prix_Unitaire>13.50</Prix_Unitaire>
+    <Nationalité>Italienne</Nationalité>
+    <Photo>Regina.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL26</ID_Plat>
+    <Nom_du_plat_>Boeuf Wagyu</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>140.00</Prix_Unitaire>
+    <Nationalité>Japonaise</Nationalité>
+    <Photo>Boeuf Wagyu.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL27</ID_Plat>
+    <Nom_du_plat_>Profiteroles</Nom_du_plat_>
+    <Type_>Dessert</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>13.00</Prix_Unitaire>
+    <Nationalité>Française</Nationalité>
+    <Photo>Profiteroles.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL28</ID_Plat>
+    <Nom_du_plat_>Boeuf bourguignon</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-03</Date_de_péremption>
+    <Prix_Unitaire>19.00</Prix_Unitaire>
+    <Nationalité>Française</Nationalité>
+    <Photo>Boeuf bourguignon.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL29</ID_Plat>
+    <Nom_du_plat_>Tikka Masala</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-03</Date_de_péremption>
+    <Prix_Unitaire>17.50</Prix_Unitaire>
+    <Nationalité>Indienne</Nationalité>
+    <Photo>Tikka Masala.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL3</ID_Plat>
+    <Nom_du_plat_>Club Sandwich</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>3</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-05</Date_de_péremption>
+    <Prix_Unitaire>12.70</Prix_Unitaire>
+    <Nationalité>Classique</Nationalité>
+    <Photo>Club Sandwich.jpg</Photo>
+    <ID_Commande>CO2</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL30</ID_Plat>
+    <Nom_du_plat_>Mozzarella et pesto</Nom_du_plat_>
+    <Type_>Entrée</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>11.00</Prix_Unitaire>
+    <Nationalité>Italienne</Nationalité>
+    <Photo>Mozzarella et pesto.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL31</ID_Plat>
+    <Nom_du_plat_>Antipasti</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-01</Date_de_péremption>
+    <Prix_Unitaire>14.00</Prix_Unitaire>
+    <Nationalité>Italienne</Nationalité>
+    <Photo>Antipasti.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL32</ID_Plat>
+    <Nom_du_plat_>Cookies</Nom_du_plat_>
+    <Type_>Dessert</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-03</Date_de_péremption>
+    <Prix_Unitaire>4.00</Prix_Unitaire>
+    <Nationalité>Américaine</Nationalité>
+    <Photo>Cookies.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL33</ID_Plat>
+    <Nom_du_plat_>Canard laqué</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>17.50</Prix_Unitaire>
+    <Nationalité>Chinoise</Nationalité>
+    <Photo>Canard laqué.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL4</ID_Plat>
+    <Nom_du_plat_>Curry vert</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-03</Date_de_péremption>
+    <Prix_Unitaire>13.50</Prix_Unitaire>
+    <Nationalité>Thaï</Nationalité>
+    <Photo>Curry vert.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL5</ID_Plat>
+    <Nom_du_plat_>Pâtes au pesto</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>2</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-04</Date_de_péremption>
+    <Prix_Unitaire>12.00</Prix_Unitaire>
+    <Nationalité>Italienne</Nationalité>
+    <Photo>Pâtes au pesto.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL6</ID_Plat>
+    <Nom_du_plat_>Pâtes aux truffes</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-04</Date_de_péremption>
+    <Prix_Unitaire>18.00</Prix_Unitaire>
+    <Nationalité>Italienne</Nationalité>
+    <Photo>Pâtes aux truffes.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL7</ID_Plat>
+    <Nom_du_plat_>Pavé de saumon</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>1</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-01</Date_de_péremption>
+    <Prix_Unitaire>21.50</Prix_Unitaire>
+    <Nationalité>Française</Nationalité>
+    <Photo>Pavé de saumon.jpg</Photo>
+    <ID_Commande>CO2</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL8</ID_Plat>
+    <Nom_du_plat_>Pizza Pepperoni</Nom_du_plat_>
+    <Type_>Plat</Type_>
+    <Nombre_de_portion>4</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-08</Date_de_péremption>
+    <Prix_Unitaire>10.50</Prix_Unitaire>
+    <Nationalité>Italienne</Nationalité>
+    <Photo>Pizza Pepperoni.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+  <REPAS>
+    <ID_Plat>PL9</ID_Plat>
+    <Nom_du_plat_>Salade César</Nom_du_plat_>
+    <Type_>Entrée</Type_>
+    <Nombre_de_portion>2</Nombre_de_portion>
+    <Date_de_fabrication>2025-05-01</Date_de_fabrication>
+    <Date_de_péremption>2025-05-02</Date_de_péremption>
+    <Prix_Unitaire>10.50</Prix_Unitaire>
+    <Nationalité>Classique</Nationalité>
+    <Photo>Salade César.jpg</Photo>
+    <ID_Commande>CO1</ID_Commande>
+  </REPAS>
+</NewDataSet>

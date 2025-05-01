@@ -11,6 +11,8 @@ namespace Algo_S2_Vis_in_Paris
     {
         static void Main(string[] args)
         {
+            LienXml.ExportRepasToXml();
+            LienXml.ExportRepasToJson();
             #region Partie Code
             /*
            string cheminFichierMetro = @"metros.csv";
